@@ -31,4 +31,8 @@ Three Montgomery Upper Middle School students are working on an app for SAVE (an
 
 savePets should now show up under the Project Explorer on the left of AppceleratorStudio's IDE. You can now work on the files under the app folder.
 
+##Code Organization
+* All application code is under the 'app' folder
+* All data that is currently locally packaged with the app is in JSON form under 'app/alloy.js'
+
 
