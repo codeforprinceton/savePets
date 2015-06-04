@@ -3,4 +3,18 @@ SAVE Animals Repository
 
 ##Goals
 
-Three Montgomery Upper Middle School students are working on an app for SAVE (an animal shelter) to provide the following capabilities to potential adopters, volunteers and for people who want to make donations.    They are currently developing the capability to provide easy access to information on cats and dogs available to a potential adopter. This capability will make it easy to select a pet to adopt based on categories such as breed and size.  The second phase is to add a page to speed up the process of donating food or supplies needed for the shelter.  The third phase is to add a page where people can sign up to volunteer their time based on shelter's needs.
+Three Montgomery Upper Middle School students are working on an app for SAVE (an animal shelter) to provide the following capabilities -
+* Allow potential adopters to view pet inventory and contact SAVE if interested
+* Allow people to see what donations SAVE needs
+* Allow potential volunteers to sign-up
+
+##Backlog
+
+* Currently, pet inventory is packaged with the app as a local file - we need to connect the app to a remote data base/file
+* Build out volunteer page and email capability
+* Build out donate page
+
+##Development Platform
+
+* AppceleratorStudio 4.0 download at https://web.appcelerator.com/product/studio
+* Languages used: JavaScript, XML
