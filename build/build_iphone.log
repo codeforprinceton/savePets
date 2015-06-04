@@ -1,0 +1,344 @@
+
+Wed Jun 03 2015 22:53:04 GMT-0400 (EDT)
+
+Operating System
+  Name                        = Mac OS X
+  Version                     = 10.10.2
+  Architecture                = 64bit
+  # CPUs                      = 4
+  Memory                      = 8589934592
+
+Node.js
+  Node.js Version             = 0.10.33
+  npm Version                 = 1.4.28
+
+Titanium CLI
+  CLI Version                 = 4.0.0
+
+Titanium SDK
+  SDK Version                 = 4.0.0.GA
+  SDK Path                    = /Users/pukki/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA
+  Target Platform             = iphone
+
+Command
+  /usr/local/bin/node /Users/pukki/.appcelerator/install/4.0.0/package/node_modules/appc-cli-titanium/node_modules/titanium/bin/titanium build --platform ipad --log-level trace --sdk 4.0.0.GA --project-dir /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets --target simulator --ios-version 8.3 --device-family universal --deploy-type development --sim-type ipad --sim-version 8.3 --device-id 5055CD82-56AE-48B4-A018-3888855DE338 --skip-js-minify --no-colors --no-progress-bars --no-prompt --prompt-type socket-bundle --prompt-port 58626 --plugin-paths /Users/pukki/.appcelerator/install/4.0.0/package/node_modules --config-file /var/folders/sy/5x_tzsjj1l18szzzgy9tgjfc0000gp/T/build-1433386381037.json --no-banner
+
+[DEBUG]  Detecting modules in /Users/pukki/Library/Application Support/Titanium/modules
+[DEBUG]  Detected android module: com.appcelerator.apm 1.1.1 @ /Users/pukki/Library/Application Support/Titanium/modules/android/com.appcelerator.apm/1.1.1
+[DEBUG]  Detected android module: facebook 3.0.3 @ /Users/pukki/Library/Application Support/Titanium/modules/android/facebook/3.0.3
+[DEBUG]  Detected android module: facebook 4.0.3 @ /Users/pukki/Library/Application Support/Titanium/modules/android/facebook/4.0.3
+[DEBUG]  Detected android module: ti.cloudpush 3.3.4 @ /Users/pukki/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.4
+[DEBUG]  Detected android module: ti.cloudpush 3.3.8 @ /Users/pukki/Library/Application Support/Titanium/modules/android/ti.cloudpush/3.3.8
+[DEBUG]  Detected android module: ti.map 2.2.2 @ /Users/pukki/Library/Application Support/Titanium/modules/android/ti.map/2.2.2
+[DEBUG]  Detected android module: ti.map 2.3.0 @ /Users/pukki/Library/Application Support/Titanium/modules/android/ti.map/2.3.0
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.7 @ /Users/pukki/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.7
+[DEBUG]  Detected commonjs module: ti.cloud 3.2.8 @ /Users/pukki/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.8
+[DEBUG]  Detected iphone module: com.appcelerator.apm 1.1.1 @ /Users/pukki/Library/Application Support/Titanium/modules/iphone/com.appcelerator.apm/1.1.1
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.0.1 @ /Users/pukki/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.0.1
+[DEBUG]  Detected iphone module: com.appcelerator.urlSession 1.1.1 @ /Users/pukki/Library/Application Support/Titanium/modules/iphone/com.appcelerator.urlSession/1.1.1
+[DEBUG]  Detected iphone module: facebook 3.1.1 @ /Users/pukki/Library/Application Support/Titanium/modules/iphone/facebook/3.1.1
+[DEBUG]  Detected iphone module: facebook 4.0.3 @ /Users/pukki/Library/Application Support/Titanium/modules/iphone/facebook/4.0.3
+[DEBUG]  Detected iphone module: ti.coremotion 1.0.1 @ /Users/pukki/Library/Application Support/Titanium/modules/iphone/ti.coremotion/1.0.1
+[DEBUG]  Detected iphone module: ti.coremotion 1.1.0 @ /Users/pukki/Library/Application Support/Titanium/modules/iphone/ti.coremotion/1.1.0
+[DEBUG]  Detected iphone module: ti.map 2.0.4 @ /Users/pukki/Library/Application Support/Titanium/modules/iphone/ti.map/2.0.4
+[DEBUG]  Detected iphone module: ti.map 2.2.2 @ /Users/pukki/Library/Application Support/Titanium/modules/iphone/ti.map/2.2.2
+[DEBUG]  Detected iphone module: ti.touchid 1.0 @ /Users/pukki/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.0
+[DEBUG]  Detected iphone module: ti.touchid 1.1.0 @ /Users/pukki/Library/Application Support/Titanium/modules/iphone/ti.touchid/1.1.0
+[DEBUG]  Looking for Titanium module id=ti.cloud version=latest platform=commonjs deploy-type=development
+[INFO]   Found Titanium module id=ti.cloud version=3.2.8 platform=commonjs deploy-type=development path=/Users/pukki/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.8
+[DEBUG]  Detecting plugins in /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/plugins
+[DEBUG]  Detected plugin: ti.alloy @ /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/plugins/ti.alloy
+[DEBUG]  Detecting plugins in /Users/pukki/Library/Application Support/Titanium/plugins
+[DEBUG]  Detected plugin: com.appcelerator.test @ /Users/pukki/Library/Application Support/Titanium/plugins/com.appcelerator.test
+[DEBUG]  Looking for Titanium plugin id=ti.alloy version=1.0
+[INFO]   Found Titanium plugin id=ti.alloy version=1.0 
+[DEBUG]  Titanium SDK iOS directory: /Users/pukki/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/iphone
+[INFO]   Deploy type: development
+[INFO]   Building for target: simulator
+[INFO]   Building using iOS SDK: 8.3
+[INFO]   Building for iOS Simulator: iPad 2
+[DEBUG]  UDID: 5055CD82-56AE-48B4-A018-3888855DE338
+[DEBUG]  Simulator type: ipad
+[DEBUG]  Simulator version: 8.3
+[INFO]   Building for device family: universal
+[DEBUG]  Setting Xcode target to Debug
+[DEBUG]  Setting Xcode build OS to iphonesimulator8.3
+[DEBUG]  Xcode installation: /Applications/Xcode.app/Contents/Developer
+[DEBUG]  iOS WWDR certificate: installed
+[INFO]   Minimum iOS version: 7.0
+[INFO]   Debugging disabled
+[INFO]   Profiler disabled
+[INFO]   Initiating prepare phase
+[INFO]   Found Alloy app in /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/app
+[INFO]   Executing Alloy compile: /usr/local/bin/node /Users/pukki/.appcelerator/install/4.0.0/package/node_modules/appc-cli-titanium/node_modules/.bin/alloy compile /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/app --config platform=ios,version=0,simtype=none,devicefamily=universal,deploytype=development,target=simulator --no-colors
+[DEBUG]         .__  .__                
+[DEBUG]  _____  |  | |  |   ____ ___.__.
+[DEBUG]  \__  \ |  | |  |  /  _ <   |  |
+[DEBUG]   / __ \|  |_|  |_(  <_> )___  |
+[DEBUG]  (____  /____/____/\____// ____|
+[DEBUG]       \/                 \/
+[DEBUG]  Alloy 1.6.0 by Appcelerator. The MVC app framework for Titanium.
+[DEBUG]  ----- CONFIGURATION -----
+[DEBUG]  raw config = "platform=ios,version=0,simtype=none,devicefamily=universal,deploytype=development,target=simulator"
+[DEBUG]  platform = ios
+[DEBUG]  version = 0
+[DEBUG]  simtype = none
+[DEBUG]  devicefamily = universal
+[DEBUG]  deploytype = development
+[DEBUG]  target = simulator
+[DEBUG]  project path = /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets
+[DEBUG]  app path = /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/app
+[DEBUG]  
+[DEBUG]  ----- CONFIG.JSON -----
+[DEBUG]  dependencies = {}
+[INFO]   [config.json] config.json unchanged, using cached config.json...
+[DEBUG]  {
+[DEBUG]  "dependencies": {},
+[DEBUG]  "sourcemap": true,
+[DEBUG]  "autoStyle": false,
+[DEBUG]  "adapters": [
+[DEBUG]  "localStorage",
+[DEBUG]  "properties",
+[DEBUG]  "sql"
+[DEBUG]  ]
+[DEBUG]  }
+[DEBUG]  
+[DEBUG]  ----- CLEANING RESOURCES -----
+[DEBUG]  Removing orphaned controllers ...
+[DEBUG]  Removing orphaned models ...
+[DEBUG]  Removing orphaned styles ...
+[DEBUG]  Removing orphaned sync adapters...
+[DEBUG]  Removing orphaned assets and libs...
+[DEBUG]  
+[DEBUG]  ----- BASE RUNTIME FILES -----
+[TRACE]  SRC_DIR=/Users/pukki/.appcelerator/install/4.0.0/package/node_modules/appc-cli-titanium/node_modules/alloy/Alloy/lib
+[TRACE]  Copying SRC_DIR/alloy/sync/sql.js --> Resources/iphone/alloy/sync/sql.js
+[TRACE]  Copying SRC_DIR/alloy/sync/properties.js --> Resources/iphone/alloy/sync/properties.js
+[TRACE]  Copying SRC_DIR/alloy/sync/localStorage.js --> Resources/iphone/alloy/sync/localStorage.js
+[TRACE]  Copying SRC_DIR/alloy/controllers/BaseController.js --> Resources/iphone/alloy/controllers/BaseController.js
+[TRACE]  Copying SRC_DIR/alloy/widget.js --> Resources/iphone/alloy/widget.js
+[TRACE]  Copying SRC_DIR/alloy/underscore.js --> Resources/iphone/alloy/underscore.js
+[TRACE]  Copying SRC_DIR/alloy.js --> Resources/iphone/alloy.js
+[TRACE]  
+[TRACE]  SRC_DIR=/Users/pukki/.appcelerator/install/4.0.0/package/node_modules/appc-cli-titanium/node_modules/alloy/Alloy/common
+[TRACE]  Copying SRC_DIR/constants.js --> Resources/iphone/alloy/constants.js
+[TRACE]  
+[TRACE]  SRC_DIR=/Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/app/assets
+[TRACE]  
+[DEBUG]  
+[INFO]   ----- MVC GENERATION -----
+[INFO]   [app.tss] global style processing...
+[INFO]   [global style] writing to cache...
+[INFO]   [criteria.xml] view processing...
+[INFO]   style:      "criteria.tss"
+[INFO]   view:       "criteria.xml"
+[INFO]   controller: "criteria.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/criteria.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/criteria.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/criteria.js"
+[INFO]   [detail.xml] view processing...
+[INFO]   style:      "detail.tss"
+[INFO]   view:       "detail.xml"
+[INFO]   controller: "detail.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/detail.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/detail.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/detail.js"
+[INFO]   [index.xml] view processing...
+[INFO]   style:      "index.tss"
+[INFO]   view:       "index.xml"
+[INFO]   controller: "index.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/index.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/index.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/index.js"
+[INFO]   [master.xml] view processing...
+[INFO]   style:      "master.tss"
+[INFO]   view:       "master.xml"
+[INFO]   controller: "master.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/master.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/master.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/master.js"
+[INFO]   [row.xml] view processing...
+[INFO]   style:      "row.tss"
+[INFO]   view:       "row.xml"
+[INFO]   controller: "row.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/row.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/row.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/row.js"
+[INFO]   [survey.xml] view processing...
+[INFO]   style:      "survey.tss"
+[INFO]   view:       "survey.xml"
+[INFO]   controller: "survey.js"
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/alloy/controllers/survey.js"
+[DEBUG]  map:        "build/map/Resources/iphone/alloy/controllers/survey.js.map"
+[INFO]   created:     "Resources/iphone/alloy/styles/survey.js"
+[INFO]   
+[INFO]   [app.js] Titanium entry point processing...
+[TRACE]  - Processing "builtins" module...
+[TRACE]  - Processing "optimizer" module...
+[TRACE]  - Processing "compress" module...
+[INFO]   created:    "Resources/iphone/app.js"
+[DEBUG]  map:        "build/map/Resources/iphone/app.js.map"
+[INFO]   
+[INFO]   ----- OPTIMIZING -----
+[INFO]   - iphone/alloy.js
+[TRACE]  processing "builtins" module...
+[TRACE]  processing "optimizer" module...
+[TRACE]  processing "compress" module...
+[INFO]   - iphone/alloy/sync/localStorage.js
+[TRACE]  processing "builtins" module...
+[TRACE]  processing "optimizer" module...
+[TRACE]  processing "compress" module...
+[INFO]   - iphone/alloy/sync/properties.js
+[TRACE]  processing "builtins" module...
+[TRACE]  processing "optimizer" module...
+[TRACE]  processing "compress" module...
+[INFO]   - iphone/alloy/sync/sql.js
+[TRACE]  processing "builtins" module...
+[TRACE]  processing "optimizer" module...
+[TRACE]  processing "compress" module...
+[TRACE]  
+[TRACE]  Benchmarking
+[TRACE]  ------------
+[TRACE]  [0.85759s] TOTAL
+[INFO]   
+[INFO]   Alloy compiled in 0.85759s
+[INFO]   Alloy compiler completed successfully
+[DEBUG]  Setting Info.plist CFBundleVersion to 1.0
+[DEBUG]  Setting Info.plist CFBundleShortVersionString to 1.0
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/appicon.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/appicon.png
+[INFO]   Initiating Xcode pre-compile phase
+[DEBUG]  Ignoring /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/android
+[DEBUG]  Ignoring /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone
+[DEBUG]  Ignoring /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/mobileweb
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/Default-568h@2x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/Default-568h@2x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/Default-667h@2x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/Default-667h@2x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/Default-Landscape-736h@3x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/Default-Landscape-736h@3x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/Default-Landscape.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/Default-Landscape.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/Default-Landscape@2x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/Default-Landscape@2x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/Default-Portrait-667h@2x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/Default-Portrait-667h@2x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/Default-Portrait-736h@3x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/Default-Portrait-736h@3x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/Default-Portrait.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/Default-Portrait.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/Default-Portrait@2x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/Default-Portrait@2x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/Default.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/Default.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/Default@2x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/Default@2x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/appicon-60.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/appicon-60.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/appicon-60@2x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/appicon-60@2x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/appicon-60@3x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/appicon-60@3x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/appicon-72.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/appicon-72.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/appicon-72@2x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/appicon-72@2x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/appicon-Small-50.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/appicon-Small-50.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/appicon-Small.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/appicon-Small.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/appicon-Small@2x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/appicon-Small@2x.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/appicon.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/appicon.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/appicon@2x.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/appicon@2x.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/blackberry/Ti.Manifest => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/blackberry/Ti.Manifest
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/blackberry/appicon.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/blackberry/appicon.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/blackberry/map/bubble.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/blackberry/map/bubble.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/blackberry/map/green_pin.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/blackberry/map/green_pin.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/blackberry/map/purple_pin.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/blackberry/map/purple_pin.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/blackberry/map/red_pin.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/blackberry/map/red_pin.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/blackberry/splash-600x1024.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/blackberry/splash-600x1024.png
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/iTunesArtwork => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/iTunesArtwork
+[DEBUG]  Copying /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/iTunesArtwork@2x => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/iTunesArtwork@2x
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Augustus.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Augustus.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Barney.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Barney.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Blanca.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Blanca.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/BruceWayne.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/BruceWayne.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Caya.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Caya.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Char.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Char.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/CrackerJack.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/CrackerJack.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Donna.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Donna.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Dottie.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Dottie.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Hank.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Hank.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Jackson.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Jackson.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Knuckle.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Knuckle.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Lady.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Lady.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Liberty.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Liberty.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/LokiBear.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/LokiBear.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Marty.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Marty.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Rockette.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Rockette.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Ruby.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Ruby.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Sasha.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Sasha.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/SimbaandSnookie.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/SimbaandSnookie.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Sophia.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Sophia.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Tiff.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Tiff.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/Westie.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/Westie.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/SAVEPhotos/save.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/SAVEPhotos/save.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/alien.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/alien.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/appc.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/appc.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/cat.jpeg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/cat.jpeg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/daschund.jpeg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/daschund.jpeg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/down.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/down.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/pod.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/pod.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/predator.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/predator.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/puppy.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/puppy.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/puppy2.jpeg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/puppy2.jpeg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/save.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/save.png
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/tony.jpg => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/tony.jpg
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/images/up.png => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/images/up.png
+[INFO]   Processing JavaScript files
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/CFG.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/CFG.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/app.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/app.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/backbone.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/backbone.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/constants.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/constants.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/controllers/BaseController.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/controllers/BaseController.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/controllers/criteria.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/controllers/criteria.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/controllers/detail.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/controllers/detail.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/controllers/index.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/controllers/index.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/controllers/master.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/controllers/master.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/controllers/row.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/controllers/row.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/controllers/survey.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/controllers/survey.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/styles/criteria.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/styles/criteria.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/styles/detail.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/styles/detail.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/styles/index.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/styles/index.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/styles/master.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/styles/master.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/styles/row.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/styles/row.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/styles/survey.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/styles/survey.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/sync/localStorage.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/sync/localStorage.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/sync/properties.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/sync/properties.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/sync/sql.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/sync/sql.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/underscore.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/underscore.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy/widget.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy/widget.js
+[DEBUG]  Symlinking /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/Resources/iphone/alloy.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/alloy.js
+[DEBUG]  Symlinking /Users/pukki/Library/Application Support/Titanium/modules/commonjs/ti.cloud/3.2.8/ti.cloud.js => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/ti.cloud.js
+[INFO]   Processing Titanium namespace resources
+[DEBUG]  Copying /Users/pukki/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/iphone/modules/ui/images => /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app/modules/ui/images
+[INFO]   Skipping xcodebuild
+[INFO]   Finished building the application in 1s 786ms
+[INFO]   Launching iOS Simulator
+[DEBUG]  [ioslib] Removing old log file: /Users/pukki/Library/Developer/CoreSimulator/Devices/5055CD82-56AE-48B4-A018-3888855DE338/data/Containers/Data/Application/7F7F4374-BCA9-408B-B38A-8EDE0D3CB444/Documents/becf9547-8a93-4733-9999-147639511415.log
+[DEBUG]  [ioslib] Executing: /Users/pukki/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/node_modules/ioslib/lib/ios-sim "launch" "/Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app" "--verbose" "--xcode-dir" "/Applications/Xcode.app/Contents/Developer" "--udid" "5055CD82-56AE-48B4-A018-3888855DE338" "--timeout" "180"
+[DEBUG]  [ioslib] Executing: osascript "/Users/pukki/Library/Application Support/Titanium/mobilesdk/osx/4.0.0.GA/node_modules/ioslib/lib/iphone_sim_activate.scpt" "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app"
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] App Spec: <DTiPhoneSimulatorApplicationSpecifier 0x7faef360b090> specified by app path /Users/pukki/Documents/Appcelerator_Studio_Workspace/savePets/build/iphone/build/Debug-iphonesimulator/SAVE.app
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] SDK Root: <DTiPhoneSimulatorSystemRoot 0x7faef353fef0> path=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/sy/5x_tzsjj1l18szzzgy9tgjfc0000gp/T//ios-sim-stderr-pipe-1433386387'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Creating named pipe at `/var/folders/sy/5x_tzsjj1l18szzzgy9tgjfc0000gp/T//ios-sim-stdout-pipe-1433386387'
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] using device family iphone
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 136DEBC2-83EA-408D-A35C-598BB1506562 == 5055CD82-56AE-48B4-A018-3888855DE338
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing F201B0F4-04CD-43BD-8CAB-5BFAD24C841B == 5055CD82-56AE-48B4-A018-3888855DE338
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing C77FD85E-DF60-4394-8FB9-55E0FC176007 == 5055CD82-56AE-48B4-A018-3888855DE338
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing AACCD9E4-B9E9-489E-A9F7-CC9E6F9BB4FC == 5055CD82-56AE-48B4-A018-3888855DE338
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 8AF6FDA0-7E02-4F84-BBB2-2A6584975E80 == 5055CD82-56AE-48B4-A018-3888855DE338
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Comparing 5055CD82-56AE-48B4-A018-3888855DE338 == 5055CD82-56AE-48B4-A018-3888855DE338
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] set device to : iPad 2
+[DEBUG]  [ioslib] [ios-sim] [DEBUG] Session started
+[DEBUG]  [ioslib] Found application log file: /Users/pukki/Library/Developer/CoreSimulator/Devices/5055CD82-56AE-48B4-A018-3888855DE338/data/Containers/Data/Application/EFF2D4AA-F09D-45EA-8852-9D883E5102CE/Documents/becf9547-8a93-4733-9999-147639511415.log
+[INFO]   Project built successfully in 10s 269ms

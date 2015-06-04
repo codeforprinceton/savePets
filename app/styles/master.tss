@@ -1,0 +1,20 @@
+"Window": {
+	layout: 'vertical',
+	barColor: 'lightgray',
+	backgroundColor: '#fff'
+},
+"#master[platform=android]": {
+    exitOnClose: true
+}
+
+"#header": {
+    height: '50dp',
+    width: Ti.UI.FILL,
+    textAlign: 'center',
+    backgroundColor: '#222',
+    color: '#fff',
+    font: {
+        fontSize: '24dp',
+        fontWeight: 'bold'
+    }
+}

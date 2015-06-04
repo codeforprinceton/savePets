@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="genericWin" title="Dogs for Adoption">
+		<TableView id="pettable" onClick="openDetail" filterAttribute="id">
+			<SearchBar platform="android,ios"/>
+			<HeaderView platform="android">
+				<Label id="header">Dogs for Adoption</Label>
+			</HeaderView>
+		</TableView>
+	</Window>
+</Alloy>

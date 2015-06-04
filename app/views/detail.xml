@@ -1,0 +1,13 @@
+<Alloy>
+	<Window layout="vertical">
+		<ImageView width = "75%" id="displayphoto"/>
+		<Label id="name" platform="android"/>
+		<Label id="displaybreed"/>
+		<Label id="displaygender"/>
+		<Label id="displayage"/>
+		<Label id="displaysize"/>
+		<Label id="displayweight"/>
+		<Label id="displayabout"/>
+		<Button class="button" onClick="submit">Ask about this pet</Button>
+	</Window>
+</Alloy>

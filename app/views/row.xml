@@ -1,0 +1,10 @@
+<Alloy>
+	<TableViewRow>
+		<Label id="pet_name"/>
+		<Label id="pet_breed"/>
+		<Label id="pet_gender"/>
+		<Label id="pet_color"/>
+		<Label id="pet_age"/>
+		<ImageView id="pet_photo"/>
+	</TableViewRow>
+</Alloy>

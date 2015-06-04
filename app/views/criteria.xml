@@ -1,0 +1,152 @@
+<Alloy>
+	<Window id="genericWin" title="Pet Search" modal="true" onOpen="focusTextField" exitOnClose="true">
+		<TableView>
+<!--
+			<TableViewRow>
+				<View width="33%" left="0%">
+			        <Label text="Demo Col 1" width="50%" />
+				</View>
+				<View width="33%" left="33%">
+			        <Label text="Demo Col 2" width="50%" />
+				</View>
+				<View width="34%" left="66%">
+			        <Label text="Demo Col 3" width="50%" />
+				</View>
+			</TableViewRow>
+-->			
+<!--
+			<TableViewRow>
+				<View width="50%" left="0%">
+			        <Label text="Prior Pet Owner? " width="80%" />
+				</View>
+				<View width="50%" left="50%">
+					
+				    <Switch/>
+				   
+				    <Switch class="titles" platform="android,mobileweb" />
+				
+				    <Switch class="checkbox" platform="android" />
+				</View>
+			</TableViewRow>
+			<TableViewRow height="70dp">
+				<View width="50%" left="0%">
+			        <Label text="How many years ? " width="80%" />
+				</View>
+				<View width="50%" left="50%" layout="vertical">
+					<Slider id="slider" min="0" max="50" width="80%" value="0" onChange="updateLabel"/>		
+        			<Label id="label_slider" width="100%" top="10" left="0" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
+				</View>
+			</TableViewRow>
+-->
+			<TableViewRow id = "dogrow" height="60dp">
+				<View width="50%" left="0%" layout = "vertical">
+			        <Label text="Search Dogs? " width="80%" />
+			        <Switch onChange="changepickerDog" />
+			    	<Switch class="titles" platform="android,mobileweb" />
+			    	<Switch class="checkbox" platform="android" />
+				</View>
+				<View id = "dogbreedrow" width="50%" left="50%" visible="false">
+	                <Picker id = "dogbreedpicker">
+<!--
+	                    <PickerRow title="--ALL--"/>
+	                    <PickerRow title="Lhasa Apso"/>
+	                    <PickerRow title="Golden Retriever"/>
+	                    <PickerRow title="Labrador"/>
+	                    <PickerRow title="Doberman"/>
+-->
+<!--	                    <Require src="pickerrow"/>
+-->
+	                </Picker>
+				</View>
+			</TableViewRow>
+			<TableViewRow id = "puppyrow" height="60dp">
+				<View width="50%" left="0%" layout="vertical">
+			        <Label text="Search Puppies?" width="80%" />
+			        <Switch onChange="changepickerPuppy" width="80%"/>
+			    	<Switch class="titles" platform="android,mobileweb" />
+			    	<Switch class="checkbox" platform="android" />
+				</View>
+				<View  id = "puppybreedrow" width="50%" left="50%" visible="false">
+	                <Picker id = "puppybreedpicker">
+<!--	                   
+	                    <PickerRow title="--ALL--"/>
+	                    <PickerRow title="Lhasa Apso"/>
+	                    <PickerRow title="Golden Retriever"/>
+	                    <PickerRow title="Labrador"/>
+	                    <PickerRow title="Doberman"/>
+-->
+<!--	                    <Require src="pickerrow"/>
+-->
+	                </Picker>	               
+				</View>
+			</TableViewRow>
+			<TableViewRow id = "catrow" height="60dp">
+				<View width="50%" left="0%" layout="vertical">
+			        <Label text="Search Cats?" width="80%" />
+			        <Switch onChange="changepickerCat" width="80%"/>
+			    	<Switch class="titles" platform="android,mobileweb" />
+			    	<Switch class="checkbox" platform="android" />
+				</View>
+				<View  id = "catbreedrow" width="50%" left="50%" visible="false">
+	                <Picker id = "catbreedpicker">
+<!--	                  
+	                    <PickerRow title="--ALL--"/>
+	                    <PickerRow title="Persian"/>
+	                    <PickerRow title="Bengal"/>
+	                    <PickerRow title="Tabby"/>
+	                    <PickerRow title="Egyptian"/>
+-->
+<!--	                    <Require src="pickerrow"/>
+-->
+	                </Picker>	               
+				</View>
+			</TableViewRow>
+			<TableViewRow id = "kittenrow" height="60dp">
+				<View width="50%" left="0%" layout="vertical">
+			        <Label text="Search Kittens?" width="80%" />
+			        <Switch onChange="changepickerKitten" width="80%"/>
+			    	<Switch class="titles" platform="android,mobileweb" />
+			    	<Switch class="checkbox" platform="android" />
+				</View>
+				<View  id = "kittenbreedrow" width="50%" left="50%" visible="false">
+	                <Picker id="kittenbreedpicker">
+<!--
+	                    <PickerRow title="--ALL--"/>
+	                    <PickerRow title="Persian"/>
+	                    <PickerRow title="Bengal"/>
+	                    <PickerRow title="Tabby"/>
+	                    <PickerRow title="Egyptian"/>
+-->
+<!--	                    <Require src="pickerrow"/>
+-->
+	                </Picker>	               
+				</View>
+			</TableViewRow>
+			
+<!--			
+			<TableViewRow>
+				<View width="50%" left="0%">
+			        <Label text="Do you have any pets? " width="80%" />
+				</View>
+				<View width="50%" left="50%">
+	  				<TextField class="itemField" hintText="Insert Pets Here " onReturn="closeKeyboard"/>
+				</View>
+			</TableViewRow>
+			<TableViewRow>
+				<View width="50%" left="0%">
+			        <Label text="Where do you live? " width="80%" />
+				</View>
+				<View width="50%" left="50%">
+	  				<TextField class="itemField" hintText="Insert State Here " onReturn="closeKeyboard"/>
+				</View>
+			</TableViewRow>
+-->
+
+			<TableViewRow>
+				<Button class="button" onClick="openMaster">Search</Button>
+			</TableViewRow>
+			<TableViewRow height="50dp">
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

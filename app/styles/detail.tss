@@ -1,0 +1,22 @@
+"Window": {
+	layout: 'vertical',
+	barColor: 'lightgray',
+	backgroundColor: '#fff'
+},
+"Label": {
+    left: 15,
+    top: 10,
+    font: {
+        fontSize: '18dp',
+        fontWeight: 'normal'
+    },
+    textAlign: 'left'
+},
+".button":{
+	width: '80%',
+	top: '10dp',
+	font: {
+		fontSize: '25dp',
+		fontWeight: 'bold'
+	}
+}

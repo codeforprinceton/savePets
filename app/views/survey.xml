@@ -1,0 +1,61 @@
+<Alloy>
+	<NavigationWindow id="index" platform="ios">
+		<Window id="genericWin" title="Volunteer Survey" class="container" modal="true" onOpen="focusTextField" exitOnClose="true">
+			<TableView>
+				<TableViewRow>
+					<View width="50%" left="0%">
+						<Label text="Owned pets? " width="50%" />
+					</View>
+					<View width="50%" left="50%">
+						<!-- just the default switch, works on all platforms -->
+						<Switch id="petswitch"/>
+						<!-- switch with some platform-specific styling -->
+						<Switch class="titles" platform="android,mobileweb" />
+						<!-- an android checkbox -->
+						<Switch class="checkbox" platform="android" />
+					</View>
+				</TableViewRow>
+				<TableViewRow height="75dp">
+					<View width="50%" left="0%">
+						<Label text="Energy level of pet?" width="50%" />
+					</View>
+					<View width="50%" left="50%" layout="vertical">
+						<Slider id="slider" min="0" max="10" width="80%" value="25" onChange="updateLabel"/>
+						<Label id="label_slider" width="100%" top="10" left="0" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
+					</View>
+				</TableViewRow>
+				<TableViewRow id = "dogbreedrow">
+					<View width="50%" left="0%">
+						<Label text="What breeds of dogs did you own previously?" width="80%" />
+					</View>
+					<View width="50%" left="50%">
+						<Picker id="sampledogbreedpicker">
+							<PickerRow title="--ALL--"/>
+							<PickerRow title="Lhasa Apso"/>
+							<PickerRow title="Golden Retriever"/>
+							<PickerRow title="Labrador"/>
+							<PickerRow title="Doberman"/>
+						</Picker>
+					</View>
+				</TableViewRow>
+				<TableViewRow>
+					<View width="50%" left="0%">
+						<Label text="Your Name " width="50%" />
+					</View>
+				</TableViewRow>
+				<TableViewRow>
+					<View width="50%" left="0%">
+						<Label text="Your age " width="50%" />
+					</View>
+					<View width="50%" left="50%">
+						<TextField class="itemField" hintText="Prior volunteering experience ?" onReturn="closeKeyboard"/>
+					</View>
+				</TableViewRow>
+				<TableViewRow>
+					<Button class="button" onClick="submit">Submit</Button>
+				</TableViewRow>
+
+			</TableView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

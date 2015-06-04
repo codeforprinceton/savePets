@@ -1,0 +1,40 @@
+"#row": {
+	backgroundColor: "#fff",
+	height: '65dp'
+}
+
+"#pet_name": {
+    top: '3dp',
+    left: '10dp',
+    font: {
+        fontSize: '15dp',
+        fontWeight: 'bold'
+    }
+}
+
+"#pet_breed": {
+    top: '20dp',
+    left: '20dp',
+    font: {
+        fontSize: '13dp',
+        fontWeight: 'normal'
+    }
+}
+
+"#pet_gender": {
+    top: '35dp',
+    left: '30dp',
+    font: {
+        fontSize: '9dp',
+        fontWeight: 'normal'
+    }
+}
+
+"#pet_age": {
+    top: '45dp',
+    left: '35dp',
+    font: {
+        fontSize: '8dp',
+        fontWeight: 'bold'
+    }
+}
