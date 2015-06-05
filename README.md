@@ -12,7 +12,7 @@ Three Montgomery Upper Middle School students are working on an app for SAVE (an
 
 * Currently, pet inventory is packaged with the app as a local file - we need to connect the app to a remote data base/file
 * Build out volunteer page and email capability
-* Build out donate page
+* Build out donate page and connect it to a remote data base/file
 * Data entry screens to allow SAVE to manage pet inventory
 * Data entry screen to allow SAVE to change what donations they require
 
