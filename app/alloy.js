@@ -346,7 +346,7 @@ if (!OS_IOS && !OS_ANDROID) {
 		}
 	};
 	
-	dogdata = {};
+	var dogdata = {};
 	
 	var url = "http://api.petfinder.com/shelter.getPets?key=c47ceeacfad5856b4e795f8abf29db09&id=NJ143&format=json&count=1000&status=A";
 	var xhr = Ti.Network.createHTTPClient({
@@ -363,10 +363,13 @@ if (!OS_IOS && !OS_ANDROID) {
 			//all this piece of code does is takes the name of the first pets breed from the inventory in petfinder pet and display 
 	        //its name in an alert	      
 	       	var saveDataJSON = JSON.parse(this.responseText);
+	       	var petData = saveDataJSON.petfinder.pets.pet;
+	       	//alert(Alloy.Globals.dogdata[0]);
+
 	        //alert(JSON.stringify(saveDataJSON.petfinder.pets.pet[0].name.$t));
 	        
 	        
-	        //all this piece of code does is takes the name of the first pets breed from the inventory in petfinder pet and display 
+	        //all this piece of code does is takes the name of the first pets breed from the inventory in petfinder and display
 	        //its name in an alert 
 	        //alert(JSON.stringify(saveDataJSON.petfinder.pets.pet[0].breeds.breed.$t));
 	        //alert(JSON.stringify(saveDataJSON.petfinder.pets.pet[0]));
@@ -376,7 +379,22 @@ if (!OS_IOS && !OS_ANDROID) {
 	        //alert (JSON.stringify(saveDataJSON.petfinder.pets.length));
 	        //alert (JSON.stringify(saveDataJSON.petfinder.pets.pet[0]));
 	        //alert (JSON.stringify(saveDataJSON.petfinder.pets.pet[1]));
-	        
+	        	    
+	        //dogdata = [];
+	        dogdata = {};
+	        	        
+	        for ( var i = 0; i < petData.length; i++) {
+	        	dogdata[petData[i].name.$t] = {
+		        		'breed' : petData[i].breeds.breed.$t,
+		        		'gender' : petData[i].sex.$t,
+		        		'photo' : petData[i].media.photos.photo[1].$t,
+		        		'about' : petData[i].description.$t,
+		        		'color' : "Blackish"
+	        		}
+	        	console.log(dogdata);
+	        }
+
+/*    
 			var dogStr = " { '";
 	        for ( var i = 0; i < saveDataJSON.petfinder.pets.pet.length; i++) {
 	        	var name = JSON.stringify(saveDataJSON.petfinder.pets.pet[i].name.$t);
@@ -398,6 +416,13 @@ if (!OS_IOS && !OS_ANDROID) {
 				+ " about : '" + about + "'"
 				+ " }";
 				
+				var myObject = {
+					name: {
+						"breed" : breed,
+						"gender" : gender,
+					}
+				}
+				
 				//alert (petObject);
 				if (dogStr === " { '") {
 					dogStr = petObject;					
@@ -413,8 +438,7 @@ if (!OS_IOS && !OS_ANDROID) {
 	        //for (var eachpet in petList) {
 	        //	alert(eachpet.name.$t);
 	        //}
-	        
-	        
+*/
 	        //alert('success');
 	    },
 	    onerror: function(e) {
@@ -423,8 +447,10 @@ if (!OS_IOS && !OS_ANDROID) {
 	        alert('error');
 	    },
 	    timeout:5000  /* in milliseconds */
+	  
 	});
 	xhr.open("GET", url);
 	xhr.send();  // request is actually sent with this statement
 	
+	//alert(dogdata[0]);
 }
