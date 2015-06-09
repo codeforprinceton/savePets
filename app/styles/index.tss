@@ -62,6 +62,12 @@
 
 
 
+"TableView": {
+
+	separatorColor: 'transparent',
+
+},
+
 "TableViewRow": {
 
 	height: '50dp'

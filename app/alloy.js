@@ -346,9 +346,11 @@ if (!OS_IOS && !OS_ANDROID) {
 		}
 	};
 	
-	var dogdata = {};
+	var petdata = {};
 	
 	var url = "http://api.petfinder.com/shelter.getPets?key=c47ceeacfad5856b4e795f8abf29db09&id=NJ143&format=json&count=1000&status=A";
+
+
 	var xhr = Ti.Network.createHTTPClient({
 	    onload: function(e) {
 			// this function is called when data is returned from the server and available for use
@@ -360,97 +362,36 @@ if (!OS_IOS && !OS_ANDROID) {
 	       	// var petone = pets.item(0).getAttribute("name");]
 				
 				
-			//all this piece of code does is takes the name of the first pets breed from the inventory in petfinder pet and display 
-	        //its name in an alert	      
 	       	var saveDataJSON = JSON.parse(this.responseText);
-	       	var petData = saveDataJSON.petfinder.pets.pet;
-	       	//alert(Alloy.Globals.dogdata[0]);
-
-	        //alert(JSON.stringify(saveDataJSON.petfinder.pets.pet[0].name.$t));
-	        
-	        
-	        //all this piece of code does is takes the name of the first pets breed from the inventory in petfinder and display
-	        //its name in an alert 
-	        //alert(JSON.stringify(saveDataJSON.petfinder.pets.pet[0].breeds.breed.$t));
-	        //alert(JSON.stringify(saveDataJSON.petfinder.pets.pet[0]));
-	        
-	        //var petList = JSON.parse(JSON.stringify(saveDataJSON.petfinder.pets));
-	        
-	        //alert (JSON.stringify(saveDataJSON.petfinder.pets.length));
-	        //alert (JSON.stringify(saveDataJSON.petfinder.pets.pet[0]));
-	        //alert (JSON.stringify(saveDataJSON.petfinder.pets.pet[1]));
-	        	    
-	        //dogdata = [];
-	        dogdata = {};
+	       	var pets = saveDataJSON.petfinder.pets.pet;
 	        	        
-	        for ( var i = 0; i < petData.length; i++) {
-	        	dogdata[petData[i].name.$t] = {
-		        		'breed' : petData[i].breeds.breed.$t,
-		        		'gender' : petData[i].sex.$t,
-		        		'photo' : petData[i].media.photos.photo[1].$t,
-		        		'about' : petData[i].description.$t,
+	        for ( var i = 0; i < pets.length; i++) {
+	        	petdata[pets[i].id.$t] = {
+	        			'name' : pets[i].name.$t,
+		        		'breed' : (typeof pets[i].breeds.breed.$t !== 'undefined') ? pets[i].breeds.breed.$t : 'Unlisted',
+		        		'gender' : pets[i].sex.$t === 'M' ? 'Male' : 'Female',
+		        		'photo' : pets[i].media.photos.photo[1].$t,
+		        		'bigphoto' : pets[i].media.photos.photo[3].$t,
+		        		'about' : pets[i].description.$t,
+		        		'age' : pets[i].age.$t,
+		        		'animal' : pets[i].animal.$t,
 		        		'color' : "Blackish"
-	        		}
-	        	console.log(dogdata);
+	        	};
 	        }
-
-/*    
-			var dogStr = " { '";
-	        for ( var i = 0; i < saveDataJSON.petfinder.pets.pet.length; i++) {
-	        	var name = JSON.stringify(saveDataJSON.petfinder.pets.pet[i].name.$t);
-	        	var breed = JSON.stringify(saveDataJSON.petfinder.pets.pet[i].breeds.breed.$t);	        	
-	        	var age = JSON.stringify(saveDataJSON.petfinder.pets.pet[i].age.$t);
-	        	var gender = JSON.stringify(saveDataJSON.petfinder.pets.pet[i].sex.$t);
-				var photo = JSON.stringify(saveDataJSON.petfinder.pets.pet[i].media.photos.photo[1].$t);
-				var about = JSON.stringify(saveDataJSON.petfinder.pets.pet[i].description.$t);
-				var color = "Blackish";
-
-				//alert (name + ', '  + breed + ', ' + age + ', ' + gender + ', ' + photo + ', ' + about);
-				
-				var petObject = name + "': {"
-				+ " breed : '" + breed + "', "
-				+ " gender : '" + gender + "', "
-				+ " age : '" + age + "', "
-				+ " color : '" + color + "', "
-				+ " photo : '" + photo + "', "
-				+ " about : '" + about + "'"
-				+ " }";
-				
-				var myObject = {
-					name: {
-						"breed" : breed,
-						"gender" : gender,
-					}
-				}
-				
-				//alert (petObject);
-				if (dogStr === " { '") {
-					dogStr = petObject;					
-				} else {
-					dogStr = dogStr + ', ' + petObject;					
-				}
-	        }
-	        
-	        alert(dogStr);
-	        
-	        dogdata = JSON.parse(dogStr);
-	        
-	        //for (var eachpet in petList) {
-	        //	alert(eachpet.name.$t);
-	        //}
-*/
-	        //alert('success');
 	    },
 	    onerror: function(e) {
 			// this function is called when an error occurs, including a timeout
 	        Ti.API.debug(e.error);
-	        alert('error');
+	        alert('Error while connecting to Database!');
 	    },
-	    timeout:5000  /* in milliseconds */
-	  
+	    timeout:5000  // in milliseconds	  
 	});
+
+
+	
+
 	xhr.open("GET", url);
 	xhr.send();  // request is actually sent with this statement
 	
-	//alert(dogdata[0]);
+	
 }

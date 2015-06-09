@@ -6,7 +6,9 @@
 "#master[platform=android]": {
     exitOnClose: true
 }
-
+"TableView": {
+	separatorColor: 'lightgray',
+}
 "#header": {
     height: '50dp',
     width: Ti.UI.FILL,

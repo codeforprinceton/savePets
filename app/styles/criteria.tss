@@ -17,6 +17,9 @@
   exitOnClose: true,
   layout: 'vertical'
 }
+"TableView": {
+	separatorColor: 'transparent',
+}
 'Switch': {
 	top: '5dp',
 	bottom: '5dp'
