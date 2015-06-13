@@ -16,6 +16,20 @@ function openCriteria() {
 }
 
 
+function openContactUS() {
+
+// get the detail controller and window references
+
+	var controller = Alloy.createController('contact');
+	var win = controller.getView();
+
+	if (OS_IOS) {
+		Alloy.Globals.navgroup.openWindow(win);
+	} else if (OS_ANDROID) {
+		win.open();	
+	}
+
+}
 
 
 
@@ -26,7 +40,7 @@ function openDonate() {
 	var win = controller.getView();
 
 	if (OS_IOS) {
-		Alloy.Globals.navgroup.openWindow(win)
+		Alloy.Globals.navgroup.openWindow(win);
 	} else if (OS_ANDROID) {
 		win.open();
 	}

@@ -1,0 +1,12 @@
+<Alloy>
+	<Window id="genericWin" title="Pet Search" modal="true"  exitOnClose="true">
+		<TableView>
+			<TableViewRow>
+				<Button class="button" onClick="openEmail">Email Us</Button>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="label">Call us at 1-609-921-6122</Label>
+			</TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

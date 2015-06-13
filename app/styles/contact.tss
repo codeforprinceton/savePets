@@ -1,0 +1,57 @@
+"#genericWin":{
+	layout: 'vertical',
+	barColor: 'lightgray'
+},
+
+"Window": {
+	layout: 'vertical',
+	barColor: '#4360AB',
+	backgroundColor: '#69D2E7'
+},
+".button":{
+	width: '80%',
+	top: '10dp',
+	font: {
+		fontSize: '25dp',
+		fontWeight: 'bold'
+	}
+},
+'#index': {
+  backgroundColor: '#fff',
+  modal: false,
+  exitOnClose: true,
+  layout: 'vertical'
+},
+'Switch': {
+	top: '5dp',
+	bottom: '5dp'
+},
+'.titles': {
+  value: false,
+  titleOn: "I'm on",
+  titleOff: "I'm off"
+},
+'.checkbox': {
+  value: true,
+  style: Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
+    titleOn: "I'm on",
+    titleOff: "I'm off"
+},
+"Label": {
+	font: {
+		fontSize: '15dp',
+		fontWeight: 'normal'
+	}
+},
+"Picker": {
+	bottom: '2dp',
+	visibleItems: 3,
+	width: '100%',
+	selectionIndicator: true
+},
+"Picker[platform=android]": {
+	useSpinner: true
+},
+"TableViewRow": {
+	height: '40dp'
+}

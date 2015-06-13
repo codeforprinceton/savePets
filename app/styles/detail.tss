@@ -4,11 +4,11 @@
 	backgroundColor: '#fff'
 },
 "Label": {
-    left: 15,
+   	left: 15,
     top: 10,
     font: {
         fontSize: '18dp',
-        fontWeight: 'normal'
+        fontWeight: 'bold'
     },
     textAlign: 'left'
 },
@@ -19,4 +19,7 @@
 		fontSize: '25dp',
 		fontWeight: 'bold'
 	}
+},
+"TableView": {
+	separatorColor: 'transparent',
 }

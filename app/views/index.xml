@@ -1,36 +1,36 @@
 <Alloy>
-<!-- iPhone -->
-  	<NavigationWindow id="index" platform="ios">
-  		<Window id="genericWin" title="Welcome to the SAVE App" class="container" modal="true" >
-  			<TableView>
+	<!-- iPhone -->
+	<NavigationWindow id="index" platform="ios">
+		<Window id="genericWin" title="Welcome to the SAVE App" class="container" modal="true" >
+			<TableView>
 				<TableViewRow>
 					<View width="33%" left="0%">
-				        <ImageView image="/images/save.png" />
+						<ImageView image="/images/save.png" />
 					</View>
 					<View width="33%" left="33%">
-				        <Label id="name" text="SAVE" />
+						<Label id="name" text="SAVE" />
 					</View>
 					<View width="34%" left="66%">
-				        <ImageView image="/images/save.png"/>
+						<ImageView image="/images/save.png"/>
 					</View>
 				</TableViewRow>
 				<TableViewRow>
 					<Button class="button" onClick="openCriteria">Find your Pet</Button>
-			 	</TableViewRow>
+				</TableViewRow>
 				<TableViewRow>
 					<Button class="button" onClick="openDonate">Donate</Button>
-				</TableViewRow>\
+				</TableViewRow>
 				<TableViewRow>
 					<Button class="button" onClick="openSurvey">Volunteer</Button>
-				</TableViewRow>				
-				<TableViewRow> 
-					<Label class="label"> Contact Us </Label>
 				</TableViewRow>
 				<TableViewRow>
-					<Label class="label"> Email: save@gmail.com </Label>
+					<Button class="button" onClick="openContactUS">Contact Us</Button>
 				</TableViewRow>
 				<TableViewRow>
-					<Label class="label"> Phone number: 1-609-###-### </Label>
+					<Label class="label">Email: save@savehomelessanimals.org</Label>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="label">Phone number: 1-609-921-6122</Label>
 				</TableViewRow>
 			</TableView>
 		</Window>

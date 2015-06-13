@@ -5,35 +5,21 @@ var args = arguments[0] || {};
 
 var stats;
 
-if (args.petType === 'dog') {
- 	stats = dogdata[args.name];
-}
-
-if (args.petType === 'cat') {
- 	stats = catdata[args.name];
-}
-
-if (args.petType === 'puppy') {
- 	stats = puppydata[args.name];
-}
-
-if (args.petType === 'kitten') {
- 	stats = kittendata[args.name];
-}
+stats = petdata[args.id];
 	
 if (OS_ANDROID) {
-	$.name.text = 'NAME: ' + args.name;
+	$.name.text = 'NAME: ' + stats.name;
 } else if (OS_IOS && Alloy.isTablet){
-	$.detail.title = 'PET NAME: ' + args.name;
+	$.detail.title = 'PET NAME: ' + stats.name;
 } else if (OS_IOS && Alloy.isHandheld){
-	$.detail.title = args.name;
+	$.detail.title = stats.name;
 }
-$.displaygender.text = 'Gender: ' + stats.gender;
-$.displaybreed.text = 'Breed: ' + stats.breed;
-$.displayage.text = 'Age: ' + stats.age;
-$.displaysize.text = 'Size: ' + stats.size;
-$.displayabout.text = 'Details: ' + stats.about;
-$.displayphoto.image = stats.photo;
+$.displaygender.text = 'Gender:  ' + stats.gender;
+$.displaybreed.text = 'Breed:  ' + stats.breed;
+$.displayage.text = 'Age:  ' + stats.age;
+$.displaysize.text = 'Size:  ' + stats.size;
+$.displayabout.text = 'Details:  ' + stats.about;
+$.displayphoto.image = stats.bigphoto;
 
 
 function submit(){
@@ -41,12 +27,12 @@ function submit(){
 	//Titanium.UI.createAlertDialog({title: 'About to attach the following file for ' + args.name, message: 'File Name is : ' + stats.photo}).show();
 
 	var emailDialog = Ti.UI.createEmailDialog();
-	emailDialog.subject = "Hello from Titanium";
+	emailDialog.subject = "I am interested in a Pet at SAVE";
 	emailDialog.toRecipients = ['animanis@hotmail.com','iccha02@gmail.com', 'beneh.mathew@gmail.com'];
-	emailDialog.messageBody = 'Your interest in ' + args.name + ' is noted. We will get back to you shortly!';
+	emailDialog.messageBody = 'Your interest in ' + stats.name + ', Pet ID ' + args.id + ' is noted. We will get back to you shortly!';
 
-	var f = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, stats.photo);
-	emailDialog.addAttachment(f);
+	//var f = Ti.Filesystem.getFile(stats.photo);
+	//emailDialog.addAttachment(f);
 	emailDialog.open();
 }
 

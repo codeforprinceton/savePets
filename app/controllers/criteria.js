@@ -114,76 +114,69 @@ function openMaster() {
 
 // Populate the pickers with data from the appropriate collections
 
-var DogbreedArray = [];
+var catBreedArray = [];
+var dogBreedArray = [];
+var kittenBreedArray = [];
+var puppyBreedArray = [];
 
-var pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
-DogbreedArray.push(pickerRow);
-
-_.each(dogdata, function(stats, name) {
-	var pickerRow = Ti.UI.createPickerRow({title:stats.breed});
-	DogbreedArray.push(pickerRow);
+_.each(petdata, function(stats, name) {
+	if (stats.animal === 'Cat') {
+		catBreedArray.push(stats.breed);
+	}
+	if (stats.animal === 'Dog') {
+		dogBreedArray.push(stats.breed);
+	}
+	if (stats.animal === 'Kitten') {
+		kittenBreedArray.push(stats.breed);
+	}
+	if (stats.animal === 'Puppy') {
+		puppyBreedArray.push(stats.breed);
+	}
 });
 
-$.dogbreedpicker.add(DogbreedArray);
+var uniqueCatBreedArray = _.uniq(catBreedArray);
+var uniqueDogBreedArray = _.uniq(dogBreedArray);
+var uniqueKittenBreedArray = _.uniq(kittenBreedArray);
+var uniquePuppyBreedArray = _.uniq(puppyBreedArray);
 
+catBreedArray = [];
+dogBreedArray = [];
+kittenBreedArray = [];
+puppyBreedArray = [];
 
-
-
-// Populate the pickers with data from the appropriate collections
-
-var PuppybreedArray = [];
-
-var pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
-PuppybreedArray.push(pickerRow);
-
-_.each(puppydata, function(stats, name) {
-	var pickerRow = Ti.UI.createPickerRow({title:stats.breed});
-	PuppybreedArray.push(pickerRow);
-});
-
-$.puppybreedpicker.add(PuppybreedArray);
-
-
-
-
-// Populate the pickers with data from the appropriate collections
-
-var KittenbreedArray = [];
+//console.log(uniqueCatBreedArray);
+//console.log(uniqueDogBreedArray);
 
 var pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
-KittenbreedArray.push(pickerRow);
+catBreedArray.push(pickerRow);
+for(x in uniqueCatBreedArray) {
+	pickerRow = Ti.UI.createPickerRow({title:uniqueCatBreedArray[x]});
+	catBreedArray.push(pickerRow);
+};
 
-_.each(kittendata, function(stats, name) {
-	var pickerRow = Ti.UI.createPickerRow({title:stats.breed});
-	KittenbreedArray.push(pickerRow);
-});
+pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
+dogBreedArray.push(pickerRow);
+for(x in uniqueCatBreedArray) {
+	pickerRow = Ti.UI.createPickerRow({title:uniqueDogBreedArray[x]});
+	dogBreedArray.push(pickerRow);
+};
 
-$.kittenbreedpicker.add(KittenbreedArray);
+pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
+kittenBreedArray.push(pickerRow);
+for(x in uniqueCatBreedArray) {
+	pickerRow = Ti.UI.createPickerRow({title:uniqueKittenBreedArray[x]});
+	kittenBreedArray.push(pickerRow);
+};
 
-
-
-
-
-
-
-// Populate the pickers with data from the appropriate collections
-
-var CatbreedArray = [];
-
-var pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
-CatbreedArray.push(pickerRow);
-
-_.each(catdata, function(stats, name) {
-	var pickerRow = Ti.UI.createPickerRow({title:stats.breed});
-	CatbreedArray.push(pickerRow);
-});
-
-$.catbreedpicker.add(CatbreedArray);
+pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
+puppyBreedArray.push(pickerRow);
+for(x in uniqueCatBreedArray) {
+	pickerRow = Ti.UI.createPickerRow({title:uniquePuppyBreedArray[x]});
+	puppyBreedArray.push(pickerRow);
+};
 
 
-
-
-
-
-
-
+$.catbreedpicker.add(catBreedArray);
+$.dogbreedpicker.add(dogBreedArray);
+$.kittenbreedpicker.add(kittenBreedArray);
+$.puppybreedpicker.add(puppyBreedArray);

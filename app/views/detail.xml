@@ -1,13 +1,36 @@
 <Alloy>
-	<Window layout="vertical">
-		<ImageView width = "75%" id="displayphoto"/>
-		<Label id="name" platform="android"/>
-		<Label id="displaybreed"/>
-		<Label id="displaygender"/>
-		<Label id="displayage"/>
-		<Label id="displaysize"/>
-		<Label id="displayweight"/>
-		<Label id="displayabout"/>
-		<Button class="button" onClick="submit">Ask about this pet</Button>
+	<Window layout="vertical" >
+		<!--
+		<ScrollView id="scrollView" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="true" height="80%" width="80%">
+		-->
+			<TableView id="view" scrollable="true" backgroundColor="white" borderRadius="10" top="10" left="10" right="10" bottom="10">
+				<TableViewRow>
+					<ImageView width = "75%" id="displayphoto"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label id="name" platform="android"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label id="displaybreed"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label id="displaygender"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label id="displayage"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label id="displaysize"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label id="displayweight"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label id="displayabout"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Button class="button" onClick="submit">Ask about this pet</Button>
+				</TableViewRow>
+			</TableView>
 	</Window>
 </Alloy>
