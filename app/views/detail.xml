@@ -29,7 +29,7 @@
 					<Label id="displayabout"/>
 				</TableViewRow>
 				<TableViewRow>
-					<Button class="button" onClick="submit">Ask about this pet</Button>
+					<Button class="button" onClick="submit">Inquire</Button>
 				</TableViewRow>
 			</TableView>
 	</Window>

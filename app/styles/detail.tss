@@ -1,7 +1,12 @@
 "Window": {
 	layout: 'vertical',
-	barColor: 'lightgray',
-	backgroundColor: '#fff'
+    titleAttributes:  {
+        color:'black',
+        font: {fontFamily:'Comic Sans', fontSize:15},
+        backgroundColor: 'lightgray',
+        shadow:{color:'gray', offset:{width:1,height:1}}
+    },
+    backgroundColor: 'lightgray'
 },
 "Label": {
    	left: 15,
@@ -14,8 +19,21 @@
 },
 ".button":{
 	width: '80%',
-	top: '10dp',
+	top: '5dp',
+	bottom: '5dp',
+//	borderColor: '#4360AB',
+	borderRadius: '10',
+//	borderWidth: '2',
+//	backgroundColor: '#A7B073',
+	backgroundColor: 'transparent',
+	shadowColor: 'lightgray',
+	shadowOffset: {
+		x: 2,
+		y: 2
+	},
+	color: 'gray',
 	font: {
+		fontFamily: 'Verdana',
 		fontSize: '25dp',
 		fontWeight: 'bold'
 	}

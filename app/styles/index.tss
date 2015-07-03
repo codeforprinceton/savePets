@@ -1,103 +1,99 @@
 "Window": {
-
 	layout: 'vertical',
-
-	barColor: '#4360AB',
-
-	backgroundColor: '#69D2E7'
-
-
-
+    titleAttributes:  {
+        color:'black',
+        font: {fontFamily:'Comic Sans', fontSize:30},
+        backgroundColor: 'lightgray',
+        shadow:{color:'gray', offset:{width:1,height:1}}
+    },
+//	backgroundGradient: {
+//        type: 'linear',
+//        startPoint: { x: '0%', y: '50%' },
+//        endPoint: { x: '100%', y: '50%' },
+//        colors: [ { color: 'white', offset: 0.0}, { color: 'lightgray', offset: 0.25 }, { color: 'gray', offset: 1.0 } ],
+//		colors: ['white','lightgray']
+//   	},
+//	barColor: 'lightgray',
+//	barColor: '#4360AB',
+//	backgroundColor: 'green',
+//	barImage: '/images/save.png'
+	backgroundImage: '/images/1.jpg'
+//    backgroundGradient: 'green'
+//	backButtonTitleImage: '/images/daschund.jpeg'
 },
-
-
 
 "Title": {
-
 	font: {
-
-	fontSize: '17dp',
-
-	fontWeight: 'bold'
-
+		fontSize: '30dp',
+		fontWeight: 'normal'
 	}
-
-
 },
-
 
 
 "Label": {
-
 	color: '#000',
-
 	font: {
-
-		fontSize: '17dp',
-
+		fontSize: '10dp',
 		fontWeight: 'bold'
-
-}
-
+	}
 },
 
 
 
 "name": {
-
 	color: '#000',
-
 	font: {
-
-	fontSize: '27dp',
-
-	fontWeight: 'bold'
-
+		fontSize: '27dp',
+		fontWeight: 'bold'
 	}
-
-
 },
 
-
-
-
-
 "TableView": {
-
 	separatorColor: 'transparent',
-
+	//backgroundImage: '/images/save.png',
+	//allowsSelection: 'true',
+	backgroundRepeat: 'false'
 },
 
 "TableViewRow": {
-
-	height: '50dp'
-
+	height: '50dp',
+	backgroundColor: 'transparent',
+	opacity: 0.0
 },
 
 ".button":{
-
 	width: '80%',
-
 	top: '5dp',
-
 	bottom: '5dp',
-
-	borderColor: '#4360AB',
-
+//	borderColor: '#4360AB',
 	borderRadius: '10',
-
-	borderWidth: '2',
-
-	backgroundColor: '#A7B073',
-
+//	borderWidth: '2',
+//	backgroundColor: '#A7B073',
+	backgroundColor: 'transparent',
+	shadowColor: 'lightgray',
+	shadowOffset: {
+		x: 2,
+		y: 2
+	},
 	color: 'white',
-
 	font: {
-
+		fontFamily: 'Verdana',
 		fontSize: '25dp',
-
 		fontWeight: 'bold'
-
 	}
-
 }    
+
+//".button":{
+//	width: '80%',
+//	top: '5dp',
+//	bottom: '5dp',
+//	borderColor: '#4360AB',
+//	borderRadius: '10',
+//	borderWidth: '2',
+//	backgroundColor: '#A7B073',
+//	color: 'white',
+//	font: {
+//		fontSize: '25dp',
+//		fontWeight: 'bold'
+//	}
+//}    

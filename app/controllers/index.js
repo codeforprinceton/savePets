@@ -36,18 +36,17 @@ function openContactUS() {
 function openDonate() {
 
 // get the detail controller and window references
-	var controller = Alloy.createController('donation');
+
+	var controller = Alloy.createController('donate');
 	var win = controller.getView();
 
 	if (OS_IOS) {
 		Alloy.Globals.navgroup.openWindow(win);
 	} else if (OS_ANDROID) {
-		win.open();
+		win.open();	
 	}
+
 }
-
-
-
 
 
 function openSurvey() {
@@ -62,18 +61,17 @@ function openSurvey() {
 		win.open();
 	}
 }
-
-
-
     
 // if IOS, then attach index to navgroup which gives all pages a 'back' button automatically
 if (OS_IOS) {
-	Alloy.Globals.navgroup = $.index;
+	Alloy.Globals.navgroup = $.indexNAV;
 }
+
+//$.genericWin.setBackgroundImage('/images/1.jpg');
 
 // open the index view
 if (OS_ANDROID) {
-	$.index.getView().open();
+	$.indexNAV.getView().open();
 } else {
-	$.index.open();
+	$.indexNAV.open();
 }

@@ -1,21 +1,30 @@
 <Alloy>
 	<!-- iPhone -->
-	<NavigationWindow id="index" platform="ios">
-		<Window id="genericWin" title="Welcome to the SAVE App" class="container" modal="true" >
+	<NavigationWindow id="indexNAV" platform="ios">
+		<Window id="genericWin" title="Welcome to SAVE !" class="container" modal="true">
 			<TableView>
 				<TableViewRow>
+<!--
+					<View>
+						<ImageView image="/images/save.png" height='Titanium.UI.SIZE' />
+					</View>
 					<View width="33%" left="0%">
 						<ImageView image="/images/save.png" />
 					</View>
 					<View width="33%" left="33%">
-						<Label id="name" text="SAVE" />
+						<Label id="name" text="Welcome to SAVE!" />
 					</View>
 					<View width="34%" left="66%">
 						<ImageView image="/images/save.png"/>
 					</View>
+-->
 				</TableViewRow>
 				<TableViewRow>
-					<Button class="button" onClick="openCriteria">Find your Pet</Button>
+				</TableViewRow>
+				<TableViewRow>
+				</TableViewRow>
+				<TableViewRow>
+					<Button class="button" onClick="openCriteria">Find a Pet</Button>
 				</TableViewRow>
 				<TableViewRow>
 					<Button class="button" onClick="openDonate">Donate</Button>
@@ -27,10 +36,20 @@
 					<Button class="button" onClick="openContactUS">Contact Us</Button>
 				</TableViewRow>
 				<TableViewRow>
-					<Label class="label">Email: save@savehomelessanimals.org</Label>
 				</TableViewRow>
 				<TableViewRow>
-					<Label class="label">Phone number: 1-609-921-6122</Label>
+				</TableViewRow>
+				<TableViewRow>
+					<View width="33%" left="0%">
+						<ImageView image="/images/save.png" height='Titanium.UI.SIZE' />
+					</View>
+					<View width="33%" left="33%">
+						<Label id="name" text="© SAVE Animal Shelter, Princeton, NJ" />
+					</View>
+					<View width="34%" left="66%">
+						<ImageView image="/images/save.png" height='Titanium.UI.SIZE' />
+					</View>
+-->
 				</TableViewRow>
 			</TableView>
 		</Window>

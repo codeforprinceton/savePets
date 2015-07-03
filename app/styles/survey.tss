@@ -1,16 +1,13 @@
-"#genericWin":{
+"Window": {
 	layout: 'vertical',
-	barColor: 'lightgray'
-}
-
-".button":{
-	width: '80%',
-	top: '10dp',
-	font: {
-		fontSize: '25dp',
-		fontWeight: 'bold'
-	}
-}
+    titleAttributes:  {
+        color:'black',
+        font: {fontFamily:'Comic Sans', fontSize:15},
+        backgroundColor: 'lightgray',
+        shadow:{color:'gray', offset:{width:1,height:1}}
+    },
+    backgroundColor: 'white'
+},
 '#index': {
   backgroundColor: '#fff',
   modal: false,
@@ -47,6 +44,36 @@
 "Picker[platform=android]": {
 	useSpinner: true
 }
+"TableView": {
+	separatorColor: 'transparent',
+	//backgroundImage: '/images/save.png',
+	//allowsSelection: 'true',
+	backgroundRepeat: 'false'
+},
+
 "TableViewRow": {
-	height: '40dp'
-}
+	height: '50dp',
+	backgroundColor: 'transparent',
+	opacity: 0.0
+},
+".button":{
+	width: '80%',
+	top: '5dp',
+	bottom: '5dp',
+//	borderColor: '#4360AB',
+	borderRadius: '10',
+//	borderWidth: '2',
+//	backgroundColor: '#A7B073',
+	backgroundColor: 'transparent',
+	shadowColor: 'lightgray',
+	shadowOffset: {
+		x: 2,
+		y: 2
+	},
+	color: 'gray',
+	font: {
+		fontFamily: 'Verdana',
+		fontSize: '25dp',
+		fontWeight: 'bold'
+	}
+}   

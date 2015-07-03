@@ -38,6 +38,8 @@
 				</View>
 			</TableViewRow>
 -->
+			<TableViewRow>
+			</TableViewRow>
 			<TableViewRow id = "dogrow" height="60dp">
 				<View width="50%" left="0%" layout = "vertical">
 			        <Label text="Search Dogs? " width="80%" />

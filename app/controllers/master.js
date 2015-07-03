@@ -21,7 +21,7 @@ function openDetail(e) {
 	}
 }
 
-//Recieves arguments from criteria
+//Recieves sent arguments from criteria
 
 var args = arguments[0] || {};
 //Titanium.UI.createAlertDialog({title: args.dogbreed, message: 'Insert messege here'}).show();
@@ -33,9 +33,11 @@ var petdataArray = [];
 // Then 'push' the row onto the 'data' array
 _.each(petdata, function(stats, id) {
 	// Create a new instance of the ROW view and 'Push' it to the data table ONLY IF the BREED selected is ALL or the BREED Matches the Filter value
-
+	
 	var selectPet = false;
 
+	// EMAPLE: If an animal is a dog, and if a breed or --ALL-- is selected,
+	// the variable selectPet becomes true
 	if (stats.animal === 'Dog') {
 		if (args.dogbreed === '--ALL--' || args.dogbreed === stats.breed) {
 			selectPet = true;
@@ -60,6 +62,8 @@ _.each(petdata, function(stats, id) {
 		}
 	}
 
+	
+	// if select pet is true, send arguments to row
 	if (selectPet === true) {
 		var controller = Alloy.createController('row', {
 			pet_id_from_master : id,
@@ -72,7 +76,6 @@ _.each(petdata, function(stats, id) {
 		});
 		var win = controller.getView();
 		// add the newly created instance of the 'row' view-controller to the 'data' array
-		//Titanium.UI.createAlertDialog({title: 'Currently Printing Dog', message: name}).show();
 		petdataArray.push(win);
 
 	}

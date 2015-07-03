@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="genericWin" title="Pet Search" modal="true"  exitOnClose="true">
+	<Window id="genericWin" title="Contact Us" modal="true"  exitOnClose="true">
 		<TableView>
 			<TableViewRow>
 				<Button class="button" onClick="openEmail">Email Us</Button>

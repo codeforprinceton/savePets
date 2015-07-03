@@ -90,7 +90,7 @@ function openMaster() {
 
 
 	// Create and open an instance of master.js and send the picked values 
-	// as parameters/arguements in the form	of name:value pairs
+	// as parameters or arguements in the form	of name:value pairs
 	var controller = Alloy.createController('master', {catbreed: catbreedpickedvalue
 													, dogbreed: dogbreedpickedvalue
 													, puppybreed: puppybreedpickedvalue
@@ -119,6 +119,8 @@ var dogBreedArray = [];
 var kittenBreedArray = [];
 var puppyBreedArray = [];
 
+
+//EXAMPLE: if an animal in the array is a cat, then push it's breed into catBreedArray
 _.each(petdata, function(stats, name) {
 	if (stats.animal === 'Cat') {
 		catBreedArray.push(stats.breed);
@@ -134,6 +136,9 @@ _.each(petdata, function(stats, name) {
 	}
 });
 
+
+// the _.uniq function basically cleans up any duplicates in the array passed as the parameter
+// and assigns the returned value to a variable
 var uniqueCatBreedArray = _.uniq(catBreedArray);
 var uniqueDogBreedArray = _.uniq(dogBreedArray);
 var uniqueKittenBreedArray = _.uniq(kittenBreedArray);
@@ -147,6 +152,8 @@ puppyBreedArray = [];
 //console.log(uniqueCatBreedArray);
 //console.log(uniqueDogBreedArray);
 
+
+// push all the breeds listed in the arrays to their corresponding picker
 var pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
 catBreedArray.push(pickerRow);
 for(x in uniqueCatBreedArray) {
@@ -156,26 +163,28 @@ for(x in uniqueCatBreedArray) {
 
 pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
 dogBreedArray.push(pickerRow);
-for(x in uniqueCatBreedArray) {
+for(x in uniqueDogBreedArray) {
 	pickerRow = Ti.UI.createPickerRow({title:uniqueDogBreedArray[x]});
 	dogBreedArray.push(pickerRow);
 };
 
 pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
 kittenBreedArray.push(pickerRow);
-for(x in uniqueCatBreedArray) {
+for(x in uniqueKittenBreedArray) {
 	pickerRow = Ti.UI.createPickerRow({title:uniqueKittenBreedArray[x]});
 	kittenBreedArray.push(pickerRow);
 };
 
 pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
 puppyBreedArray.push(pickerRow);
-for(x in uniqueCatBreedArray) {
+for(x in uniquePuppyBreedArray) {
 	pickerRow = Ti.UI.createPickerRow({title:uniquePuppyBreedArray[x]});
 	puppyBreedArray.push(pickerRow);
 };
 
 
+
+//pushes the new arrays to the corresponding pickers
 $.catbreedpicker.add(catBreedArray);
 $.dogbreedpicker.add(dogBreedArray);
 $.kittenbreedpicker.add(kittenBreedArray);

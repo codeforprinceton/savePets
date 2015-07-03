@@ -1,12 +1,12 @@
-"#genericWin":{
-	layout: 'vertical',
-	barColor: 'lightgray'
-},
-
 "Window": {
 	layout: 'vertical',
-	barColor: '#4360AB',
-	backgroundColor: '#69D2E7'
+    titleAttributes:  {
+        color:'black',
+        font: {fontFamily:'Comic Sans', fontSize:15},
+        backgroundColor: 'lightgray',
+        shadow:{color:'gray', offset:{width:1,height:1}}
+    },
+    backgroundColor: 'white'
 },
 ".button":{
 	width: '80%',
@@ -52,6 +52,36 @@
 "Picker[platform=android]": {
 	useSpinner: true
 },
+"TableView": {
+	separatorColor: 'transparent',
+	//backgroundImage: '/images/save.png',
+	//allowsSelection: 'true',
+	backgroundRepeat: 'false'
+},
+
 "TableViewRow": {
-	height: '40dp'
-}
+	height: '50dp',
+	backgroundColor: 'transparent',
+	opacity: 0.0
+},
+".button":{
+	width: '80%',
+	top: '5dp',
+	bottom: '5dp',
+//	borderColor: '#4360AB',
+	borderRadius: '10',
+//	borderWidth: '2',
+//	backgroundColor: '#A7B073',
+	backgroundColor: 'transparent',
+	shadowColor: 'lightgray',
+	shadowOffset: {
+		x: 2,
+		y: 2
+	},
+	color: 'gray',
+	font: {
+		fontFamily: 'Verdana',
+		fontSize: '25dp',
+		fontWeight: 'bold'
+	}
+}   

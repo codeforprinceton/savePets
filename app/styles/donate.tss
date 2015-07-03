@@ -1,0 +1,12 @@
+"Window": {
+	layout: 'vertical',
+    titleAttributes:  {
+        color:'black',
+        font: {fontFamily:'Comic Sans', fontSize:15},
+        backgroundColor: 'lightgray',
+        shadow:{color:'gray', offset:{width:1,height:1}}
+    }
+},
+".container" : {
+  
+}

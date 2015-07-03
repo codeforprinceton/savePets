@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="genericWin" title="Dogs for Adoption">
+	<Window id="genericWin" title="Available Pets">
 		<TableView id="pettable" onClick="openDetail" filterAttribute="id">
 			<SearchBar platform="android,ios"/>
 			<HeaderView platform="android">
