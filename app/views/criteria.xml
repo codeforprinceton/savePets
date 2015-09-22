@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="genericWin" title="Pet Search" modal="true" onOpen="focusTextField" exitOnClose="true">
+	<Window id="genericWin" title="Pet Search" modal="true" onOpen="focusTextField">
 		<TableView>
 <!--
 			<TableViewRow>

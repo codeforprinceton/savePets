@@ -1,5 +1,5 @@
 <Alloy>
-	<Window id="genericWin" title="Volunteer Survey" class="container" modal="true" onOpen="focusTextField" exitOnClose="true">
+	<Window id="genericWin" title="Volunteer Survey" class="container" modal="true" onOpen="focusTextField">
 		<TableView>
 			<TableViewRow>
 				<View width="50%" left="0%">

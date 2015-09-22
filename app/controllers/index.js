@@ -57,7 +57,7 @@ function openSurvey() {
 	
 	if (OS_IOS) {
 		Alloy.Globals.navgroup.openWindow(win);
-		} else if (OS_ANDROID) {
+	} else if (OS_ANDROID) {
 		win.open();
 	}
 }
@@ -74,4 +74,8 @@ if (OS_ANDROID) {
 	$.indexNAV.getView().open();
 } else {
 	$.indexNAV.open();
+}
+
+function onClose(e) {
+	alert("Closing time !");
 }
