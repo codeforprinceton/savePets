@@ -1,15 +1,16 @@
-function focusTextField() {
-	//$.itemField.focus();
-}
 
-function closeKeyboard(e) {
-	e.source.blur();
-}
+//function focusTextField() {
+//	$.itemField.focus();
+//}
 
-function updateLabel(e) {
-	//    $.label.text = String.format("%3.1f", e.value);
-	$.label_slider.text=String.format("%d",e.value);
-}
+//function closeKeyboard(e) {
+//	e.source.blur();
+//}
+
+//function updateLabel(e) {
+//	//    $.label.text = String.format("%3.1f", e.value);
+//	$.label_slider.text=String.format("%d",e.value);
+//}
 
 function submit() {
 	//Titanium.UI.createAlertDialog({title: 'BreedPicker', message: $.sampledogbreedpicker.getSelectedRow(0).title }).show();
@@ -26,4 +27,4 @@ function submit() {
 	emailDialog.open();
 }
 
-$.slider.text=$.slider.value;
+//$.slider.text=$.slider.value;

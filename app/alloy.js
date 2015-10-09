@@ -46,7 +46,7 @@ if (!OS_IOS && !OS_ANDROID) {
 
 	
 	// get data using petfinder url in var xhr (opens an http client using url as parameter) 
-	xhr.open("GET", url);
+	xhr.open("GET", url, true);
 	xhr.send();  // request is actually sent with this statement
 	
 	//Ti.UI.setBackgroundImage( '/images/save.png' );

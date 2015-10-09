@@ -16,8 +16,8 @@
   layout: 'vertical'
 },
 'Switch': {
-	top: '5dp',
-	bottom: '5dp'
+	top: '2dp',
+	bottom: '2dp'
 },
 '.titles': {
   value: false,

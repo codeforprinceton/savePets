@@ -6,20 +6,7 @@
         backgroundColor: 'lightgray',
         shadow:{color:'gray', offset:{width:1,height:1}}
     },
-//	backgroundGradient: {
-//        type: 'linear',
-//        startPoint: { x: '0%', y: '50%' },
-//        endPoint: { x: '100%', y: '50%' },
-//        colors: [ { color: 'white', offset: 0.0}, { color: 'lightgray', offset: 0.25 }, { color: 'gray', offset: 1.0 } ],
-//		colors: ['white','lightgray']
-//   	},
-//	barColor: 'lightgray',
-//	barColor: '#4360AB',
-//	backgroundColor: 'green',
-//	barImage: '/images/save.png'
 	backgroundImage: '/images/1.jpg'
-//    backgroundGradient: 'green'
-//	backButtonTitleImage: '/images/daschund.jpeg'
 },
 
 "Title": {

@@ -1,5 +1,5 @@
 <Alloy>
 	<Window id="genericWin" title="Donate" modal="true">
-		<WebView id="webview" url="http://www.amazon.com/gp/registry/wishlist/3KDAETHCFXB0W/ref=cm_wl_rlist_go_o?Amazon.com" />
+		<WebView id="webview" url="http://www.amazon.com/gp/registry/giftlist/3SK9N0A8RLUMA/ref=topnav_lists_2" />
 	</Window>
 </Alloy>

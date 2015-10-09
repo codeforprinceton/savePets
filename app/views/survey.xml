@@ -1,11 +1,49 @@
 <Alloy>
-	<Window id="genericWin" title="Volunteer Survey" class="container" modal="true" onOpen="focusTextField">
+	<Window id="genericWin" title="Volunteering" class="container" modal="true">
 		<TableView>
+			<!--
 			<TableViewRow>
-				<View width="50%" left="0%">
-					<Label text="Owned pets? " width="50%" />
+			<View width="33%" left="0%">
+			<Label text="Demo Col 1" width="50%" />
+			</View>
+			<View width="33%" left="33%">
+			<Label text="Demo Col 2" width="50%" />
+			</View>
+			<View width="34%" left="66%">
+			<Label text="Demo Col 3" width="50%" />
+			</View>
+			</TableViewRow>
+			-->
+			<!--
+			<TableViewRow>
+			<View width="50%" left="0%">
+			<Label text="Prior Pet Owner? " width="80%" />
+			</View>
+			<View width="50%" left="50%">
+
+			<Switch/>
+
+			<Switch class="titles" platform="android,mobileweb" />
+
+			<Switch class="checkbox" platform="android" />
+			</View>
+			</TableViewRow>
+			<TableViewRow height="70dp">
+			<View width="50%" left="0%">
+			<Label text="How many years ? " width="80%" />
+			</View>
+			<View width="50%" left="50%" layout="vertical">
+			<Slider id="slider" min="0" max="50" width="80%" value="0" onChange="updateLabel"/>
+			<Label id="label_slider" width="100%" top="10" left="0" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
+			</View>
+			</TableViewRow>
+			-->
+			<TableViewRow></TableViewRow>
+			<TableViewRow height="60dp">
+				<View width="60%" left="0%">
+					<Label text="Pet Owner" width="80%" />
 				</View>
-				<View width="50%" left="50%">
+				<View width="40%" left="60%">
 					<!-- just the default switch, works on all platforms -->
 					<Switch id="petswitch"/>
 					<!-- switch with some platform-specific styling -->
@@ -14,46 +52,74 @@
 					<Switch class="checkbox" platform="android" />
 				</View>
 			</TableViewRow>
-			<TableViewRow height="75dp">
-				<View width="50%" left="0%">
-					<Label text="Energy level of pet?" width="50%" />
+			<TableViewRow height="60dp">
+				<View width="60%" left="0%">
+					<Label text="Experienced Volunteer" width="80%" />
 				</View>
-				<View width="50%" left="50%" layout="vertical">
-					<Slider id="slider" min="0" max="10" width="80%" value="25" onChange="updateLabel"/>
+				<View width="40%" left="60%">
+					<!-- just the default switch, works on all platforms -->
+					<Switch id="petswitch"/>
+					<!-- switch with some platform-specific styling -->
+					<Switch class="titles" platform="android,mobileweb" />
+					<!-- an android checkbox -->
+					<Switch class="checkbox" platform="android" />
+					<!--
+					<Slider id="slider" min="0" max="10" width="80%" value="5" onChange="updateLabel"/>
 					<Label id="label_slider" width="100%" top="10" left="0" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
-				</View>
-			</TableViewRow>
-			<TableViewRow id = "dogbreedrow">
-				<View width="50%" left="0%">
-					<Label text="What breeds of dogs did you own previously?" width="80%" />
-				</View>
-				<View width="50%" left="50%">
-					<Picker id="sampledogbreedpicker">
-						<PickerRow title="--ALL--"/>
-						<PickerRow title="Lhasa Apso"/>
-						<PickerRow title="Golden Retriever"/>
-						<PickerRow title="Labrador"/>
-						<PickerRow title="Doberman"/>
 					</Picker>
+					-->
 				</View>
 			</TableViewRow>
-			<TableViewRow>
+			<TableViewRow  height="100dp">
 				<View width="50%" left="0%">
-					<Label text="Your Name " width="50%" />
-				</View>
-			</TableViewRow>
-			<TableViewRow>
-				<View width="50%" left="0%">
-					<Label text="Your age " width="50%" />
+					<Label text="Preferred Day" width="80%" />
 				</View>
 				<View width="50%" left="50%">
-					<TextField class="itemField" hintText="Prior volunteering experience ?" onReturn="closeKeyboard"/>
+					<ListView>
+						<ListSection>
+							<ListItem title="--ANY--"/>
+							<ListItem title="Monday"/>
+							<ListItem title="Tuesday"/>
+							<ListItem title="Wednesday"/>
+							<ListItem title="Thursday"/>
+							<ListItem title="Friday"/>
+							<ListItem title="Saturday"/>
+							<ListItem title="Sunday"/>
+						</ListSection>
+						<PullView>
+							<View backgroundColor="green" height="50">
+								<Label>Release to reload</Label>
+							</View>
+						</PullView>
+					</ListView>
+				</View>
+			</TableViewRow>
+			<TableViewRow  height="20dp">
+			</TableViewRow>
+			<TableViewRow  height="100dp">
+				<View width="50%" left="0%">
+					<Label text="Preferred Time" width="80%" />
+				</View>
+				<View width="50%" left="50%">
+					<ListView>
+						<ListSection>
+							<ListItem title="--ANY--"/>
+							<ListItem title="Mornings"/>
+							<ListItem title="Afternoons"/>
+							<ListItem title="Evenings"/>
+						</ListSection>
+						<PullView>
+							<View backgroundColor="green" height="50">
+								<Label>Release to reload</Label>
+							</View>
+						</PullView>
+					</ListView>
 				</View>
 			</TableViewRow>
 			<TableViewRow>
-				<Button class="button" onClick="submit">Submit</Button>
+				<Button class="button" onClick="submit">Volunteer</Button>
 			</TableViewRow>
-
+			<TableViewRow height="50dp"></TableViewRow>
 		</TableView>
 	</Window>
 </Alloy>

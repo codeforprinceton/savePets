@@ -56,6 +56,10 @@ function changepickerPuppy(e){
 }
 
 
+function showOptions(){
+    $.dialog.show();
+}
+
 function openMaster() {
 	
 	//Titanium.UI.createAlertDialog({title: $.dogbreedpicker.getSelectedRow(0).title, message: 'Message from openMaster'}).show();
@@ -63,8 +67,8 @@ function openMaster() {
 	// Assign the breeds picked to the corresponding variables
 	var catbreedpickedvalue = $.catbreedpicker.getSelectedRow(0).title;
 	var dogbreedpickedvalue = $.dogbreedpicker.getSelectedRow(0).title;
-	var puppybreedpickedvalue = $.puppybreedpicker.getSelectedRow(0).title;
-	var kittenbreedpickedvalue = $.kittenbreedpicker.getSelectedRow(0).title;
+	//var puppybreedpickedvalue = $.puppybreedpicker.getSelectedRow(0).title;
+	//var kittenbreedpickedvalue = $.kittenbreedpicker.getSelectedRow(0).title;
 	
 	//Titanium.UI.createAlertDialog({title:'Visibility', message:$.dogbreedrow.visible}).show();
 
@@ -78,7 +82,7 @@ function openMaster() {
 	if ($.catbreedrow.visible === 'false') {
 		catbreedpickedvalue = '';
 	}
-	
+	/*
 	if ($.puppybreedrow.visible === 'false') {
 		puppybreedpickedvalue = '';
 	}
@@ -86,15 +90,18 @@ function openMaster() {
 	if ($.kittenbreedrow.visible === 'false') {
 		kittenbreedpickedvalue = '';
 	}
+	*/
 	//Titanium.UI.createAlertDialog({title:'dogbreedpickedvalue', message:dogbreedpickedvalue}).show();
 
 
 	// Create and open an instance of master.js and send the picked values 
 	// as parameters or arguements in the form	of name:value pairs
-	var controller = Alloy.createController('master', {catbreed: catbreedpickedvalue
-													, dogbreed: dogbreedpickedvalue
-													, puppybreed: puppybreedpickedvalue
-													, kittenbreed: kittenbreedpickedvalue}
+	var controller = Alloy.createController('master', 	{
+														catbreed: catbreedpickedvalue
+														, dogbreed: dogbreedpickedvalue
+	//													, puppybreed: puppybreedpickedvalue
+	//													, kittenbreed: kittenbreedpickedvalue
+														}
 													);
 	var win = controller.getView();
 
@@ -116,8 +123,8 @@ function openMaster() {
 
 var catBreedArray = [];
 var dogBreedArray = [];
-var kittenBreedArray = [];
-var puppyBreedArray = [];
+//var kittenBreedArray = [];
+//var puppyBreedArray = [];
 
 
 //EXAMPLE: if an animal in the array is a cat, then push it's breed into catBreedArray
@@ -128,12 +135,14 @@ _.each(petdata, function(stats, name) {
 	if (stats.animal === 'Dog') {
 		dogBreedArray.push(stats.breed);
 	}
+	/*
 	if (stats.animal === 'Kitten') {
 		kittenBreedArray.push(stats.breed);
 	}
 	if (stats.animal === 'Puppy') {
 		puppyBreedArray.push(stats.breed);
 	}
+	*/
 });
 
 
@@ -141,13 +150,13 @@ _.each(petdata, function(stats, name) {
 // and assigns the returned value to a variable
 var uniqueCatBreedArray = _.uniq(catBreedArray);
 var uniqueDogBreedArray = _.uniq(dogBreedArray);
-var uniqueKittenBreedArray = _.uniq(kittenBreedArray);
-var uniquePuppyBreedArray = _.uniq(puppyBreedArray);
+//var uniqueKittenBreedArray = _.uniq(kittenBreedArray);
+//var uniquePuppyBreedArray = _.uniq(puppyBreedArray);
 
 catBreedArray = [];
 dogBreedArray = [];
-kittenBreedArray = [];
-puppyBreedArray = [];
+//kittenBreedArray = [];
+//puppyBreedArray = [];
 
 //console.log(uniqueCatBreedArray);
 //console.log(uniqueDogBreedArray);
@@ -168,6 +177,7 @@ for(x in uniqueDogBreedArray) {
 	dogBreedArray.push(pickerRow);
 };
 
+/*
 pickerRow = Ti.UI.createPickerRow({title:'--ALL--'});
 kittenBreedArray.push(pickerRow);
 for(x in uniqueKittenBreedArray) {
@@ -181,11 +191,11 @@ for(x in uniquePuppyBreedArray) {
 	pickerRow = Ti.UI.createPickerRow({title:uniquePuppyBreedArray[x]});
 	puppyBreedArray.push(pickerRow);
 };
-
+*/
 
 
 //pushes the new arrays to the corresponding pickers
 $.catbreedpicker.add(catBreedArray);
 $.dogbreedpicker.add(dogBreedArray);
-$.kittenbreedpicker.add(kittenBreedArray);
-$.puppybreedpicker.add(puppyBreedArray);
+//$.kittenbreedpicker.add(kittenBreedArray);
+//$.puppybreedpicker.add(puppyBreedArray);
