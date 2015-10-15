@@ -1,0 +1,28 @@
+<Alloy>
+	<Window id="errWin" title="Error" modal="true">
+		<TableView>
+			<TableViewRow></TableViewRow>
+			<TableViewRow></TableViewRow>
+			<TableViewRow>
+				<View width="33%" left="0%">
+					<ImageView image="/images/save.png" height='Titanium.UI.SIZE' />
+				</View>
+				<View width="33%" left="33%">
+					<Label id="name" text="Oops! This is embarassing..." />
+				</View>
+				<View width="34%" left="66%">
+					<ImageView image="/images/save.png" height='Titanium.UI.SIZE' />
+				</View>
+			</TableViewRow>
+			<TableViewRow height="100dp">
+				<View width="80%" left="10%">
+					<Label text="We are unable to connect to the Pets Database at this time. Please check your internet connection and/or try again." width="100%" />
+				</View>
+			</TableViewRow>
+			<TableViewRow>
+				<Button class="button" onClick="retry">Retry</Button>
+			</TableViewRow>
+			<TableViewRow height="50dp"></TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>

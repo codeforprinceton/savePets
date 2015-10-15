@@ -38,8 +38,6 @@
 				<TableViewRow>
 				</TableViewRow>
 				<TableViewRow>
-				</TableViewRow>
-				<TableViewRow>
 					<View width="33%" left="0%">
 						<ImageView image="/images/save.png" height='Titanium.UI.SIZE' />
 					</View>
