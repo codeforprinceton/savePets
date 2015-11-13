@@ -9,12 +9,6 @@
     backgroundColor: 'white'
 //	backgroundImage: '/images/2.jpg'
 },
-'#index': {
-  backgroundColor: '#fff',
-  modal: false,
-  exitOnClose: true,
-  layout: 'vertical'
-},
 'Switch': {
 	top: '2dp',
 	bottom: '2dp'
@@ -51,7 +45,7 @@
 //},
 
 "TableView": {
-	separatorColor: 'transparent',
+	separatorColor: 'lightgray',
 	//backgroundImage: '/images/save.png',
 	//allowsSelection: 'true',
 	backgroundRepeat: 'false'
@@ -70,13 +64,13 @@
 	borderRadius: '10',
 //	borderWidth: '2',
 //	backgroundColor: '#A7B073',
-	backgroundColor: 'transparent',
-	shadowColor: 'lightgray',
-	shadowOffset: {
-		x: 2,
-		y: 2
-	},
-	color: 'gray',
+	backgroundColor: '#0099CC',
+//	shadowColor: 'lightgray',
+//	shadowOffset: {
+//		x: 2,
+//		y: 2
+//	},
+	color: 'white',
 	font: {
 		fontFamily: 'Verdana',
 		fontSize: '25dp',

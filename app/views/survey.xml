@@ -1,122 +1,116 @@
 <Alloy>
-	<Window id="genericWin" title="Volunteering" class="container" modal="true">
+	<Window id="genericWin" title="Volunteering" modal="true">
 		<TableView>
-			<!--
-			<TableViewRow>
-			<View width="33%" left="0%">
-			<Label text="Demo Col 1" width="50%" />
-			</View>
-			<View width="33%" left="33%">
-			<Label text="Demo Col 2" width="50%" />
-			</View>
-			<View width="34%" left="66%">
-			<Label text="Demo Col 3" width="50%" />
-			</View>
-			</TableViewRow>
-			-->
-			<!--
-			<TableViewRow>
-			<View width="50%" left="0%">
-			<Label text="Prior Pet Owner? " width="80%" />
-			</View>
-			<View width="50%" left="50%">
-
-			<Switch/>
-
-			<Switch class="titles" platform="android,mobileweb" />
-
-			<Switch class="checkbox" platform="android" />
-			</View>
-			</TableViewRow>
-			<TableViewRow height="70dp">
-			<View width="50%" left="0%">
-			<Label text="How many years ? " width="80%" />
-			</View>
-			<View width="50%" left="50%" layout="vertical">
-			<Slider id="slider" min="0" max="50" width="80%" value="0" onChange="updateLabel"/>
-			<Label id="label_slider" width="100%" top="10" left="0" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
-			</View>
-			</TableViewRow>
-			-->
-			<TableViewRow></TableViewRow>
 			<TableViewRow height="60dp">
-				<View width="60%" left="0%">
-					<Label text="Pet Owner" width="80%" />
-				</View>
-				<View width="40%" left="60%">
-					<!-- just the default switch, works on all platforms -->
-					<Switch id="petswitch"/>
-					<!-- switch with some platform-specific styling -->
-					<Switch class="titles" platform="android,mobileweb" />
-					<!-- an android checkbox -->
-					<Switch class="checkbox" platform="android" />
+				<View layout="horizontal">
+					<View width="Titanium.UI.SIZE" left="5%">
+						<Label text="Name"/>
+					</View>
+					<View width="Titanium.UI.SIZE" left="5%">
+						<TextField id="volunteername" width="90%" height="40dp" />
+					</View>
 				</View>
 			</TableViewRow>
 			<TableViewRow height="60dp">
-				<View width="60%" left="0%">
-					<Label text="Experienced Volunteer" width="80%" />
-				</View>
-				<View width="40%" left="60%">
-					<!-- just the default switch, works on all platforms -->
-					<Switch id="petswitch"/>
-					<!-- switch with some platform-specific styling -->
-					<Switch class="titles" platform="android,mobileweb" />
-					<!-- an android checkbox -->
-					<Switch class="checkbox" platform="android" />
-					<!--
-					<Slider id="slider" min="0" max="10" width="80%" value="5" onChange="updateLabel"/>
-					<Label id="label_slider" width="100%" top="10" left="0" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
-					</Picker>
-					-->
+				<View layout="horizontal">
+					<View width="Titanium.UI.SIZE" left="5%">
+						<Label text="Pet Owner"/>
+					</View>
+					<View width="Titanium.UI.SIZE" left="10%">
+						<!-- just the default switch, works on all platforms -->
+						<Switch id="petowner"/>
+						<!-- switch with some platform-specific styling -->
+						<Switch class="titles" platform="android,mobileweb" />
+						<!-- an android checkbox -->
+						<Switch class="checkbox" platform="android" />
+					</View>
 				</View>
 			</TableViewRow>
-			<TableViewRow  height="100dp">
-				<View width="50%" left="0%">
-					<Label text="Preferred Day" width="80%" />
+			<TableViewRow height="60dp">
+				<View layout="horizontal">
+					<View width="Titanium.UI.SIZE" left="5%">
+						<Label text="Experienced Volunteer"/>
+					</View>
+					<View width="Titanium.UI.SIZE" left="10%">
+						<!-- just the default switch, works on all platforms -->
+						<Switch id="expvolunteer"/>
+						<!-- switch with some platform-specific styling -->
+						<Switch class="titles" platform="android,mobileweb" />
+						<!-- an android checkbox -->
+						<Switch class="checkbox" platform="android" />
+						<!--
+						<Slider id="slider" min="0" max="10" width="80%" value="5" onChange="updateLabel"/>
+						<Label id="label_slider" width="100%" top="10" left="0" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
+						</Picker>
+						-->
+					</View>
 				</View>
-				<View width="50%" left="50%">
-					<ListView>
+			</TableViewRow>
+			<TableViewRow  height="200dp">
+				<View layout="horizontal">
+					<View width="Titanium.UI.SIZE" left="5%">
+						<Label text="Preferred Day"/>
+					</View>
+					<View width="50%" left="5%">
+						<Label id='volunteerday' text="--Any--" visible='false'/>
+						<Picker id="volunteerdaylist" useSpinner="true" onItemclick="changeDay">
+							<Column>
+								<Row title="--ANY--"/>
+								<Row title="Monday"/>
+								<Row title="Tuesday"/>
+								<Row title="Wednesday"/>
+								<Row title="Thursday"/>
+								<Row title="Friday"/>
+								<Row title="Saturday"/>
+								<Row title="Sunday"/>
+							</Column>
+						</Picker>
+						<!--
+						<ListView id="volunteerdaylist" onItemclick="changeDay">
 						<ListSection>
-							<ListItem title="--ANY--"/>
-							<ListItem title="Monday"/>
-							<ListItem title="Tuesday"/>
-							<ListItem title="Wednesday"/>
-							<ListItem title="Thursday"/>
-							<ListItem title="Friday"/>
-							<ListItem title="Saturday"/>
-							<ListItem title="Sunday"/>
+						<ListItem title="--ANY--"/>
+						<ListItem title="Monday"/>
+						<ListItem title="Tuesday"/>
+						<ListItem title="Wednesday"/>
+						<ListItem title="Thursday"/>
+						<ListItem title="Friday"/>
+						<ListItem title="Saturday"/>
+						<ListItem title="Sunday"/>
 						</ListSection>
-						<PullView>
-							<View backgroundColor="green" height="50">
-								<Label>Release to reload</Label>
-							</View>
-						</PullView>
-					</ListView>
+						</ListView>
+						-->
+					</View>
 				</View>
 			</TableViewRow>
-			<TableViewRow  height="20dp">
-			</TableViewRow>
-			<TableViewRow  height="100dp">
-				<View width="50%" left="0%">
-					<Label text="Preferred Time" width="80%" />
+			<TableViewRow  height="200dp">
+				<View layout="horizontal">
+					<View width="Titanium.UI.SIZE" left="5%">
+						<Label text="Preferred Time" />
+					</View>
+					<View width="Titanium.UI.SIZE" left="10%">
+						<Label id='volunteertime' text="--Any--" visible='false'/>
+						<Picker id="volunteertimelist" onItemclick="changeTime">
+							<Column>
+								<Row title="--ANY--"/>
+								<Row title="Mornings"/>
+								<Row title="Afternoons"/>
+								<Row title="Evenings"/>
+							</Column>
+						</Picker>
+<!--
+						<ListView id="volunteertimelist" onItemclick="changeTime">
+							<ListSection>
+								<ListItem title="--ANY--"/>
+								<ListItem title="Mornings"/>
+								<ListItem title="Afternoons"/>
+								<ListItem title="Evenings"/>
+							</ListSection>
+						</ListView>
+-->
+					</View>
 				</View>
-				<View width="50%" left="50%">
-					<ListView>
-						<ListSection>
-							<ListItem title="--ANY--"/>
-							<ListItem title="Mornings"/>
-							<ListItem title="Afternoons"/>
-							<ListItem title="Evenings"/>
-						</ListSection>
-						<PullView>
-							<View backgroundColor="green" height="50">
-								<Label>Release to reload</Label>
-							</View>
-						</PullView>
-					</ListView>
-				</View>
 			</TableViewRow>
-			<TableViewRow>
+			<TableViewRow backgroundColor="lightblue" >
 				<Button class="button" onClick="submit">Volunteer</Button>
 			</TableViewRow>
 			<TableViewRow height="50dp"></TableViewRow>

@@ -28,7 +28,7 @@
 				<TableViewRow>
 					<Label id="displayabout"/>
 				</TableViewRow>
-				<TableViewRow>
+				<TableViewRow height="100dp">
 					<Button class="button" onClick="submit">Inquire</Button>
 				</TableViewRow>
 			</TableView>

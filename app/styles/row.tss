@@ -1,6 +1,6 @@
 "#row": {
 	backgroundColor: "#fff",
-	height: '75dp'
+	height: '90dp'
 }
 
 "#pet_name": {

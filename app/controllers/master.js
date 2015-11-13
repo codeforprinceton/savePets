@@ -4,6 +4,26 @@
 // the specific data for that row to display. Each new view-controller is pushed onto a local array named data, which is finally passed to the
 // TableView object's setData() method.
 
+
+
+function onSearchChange(e){
+	$.pettable.searchText = e.source.value;
+}
+
+function onSearchFocus(e){
+		$.searchBar.showBookmark = false;
+		$.searchBar.showCancel = true;
+}
+
+function onSearchCancel(e){
+	if(!_args.restrictToFavorites){
+		$.searchBar.showBookmark = true;
+		$.searchBar.showCancel = false;
+	}	
+	$.searchBar.blur();
+}
+		
+
 function openDetail(e) {
 
 	// get the detail controller and window references

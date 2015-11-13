@@ -24,4 +24,13 @@
         fontSize: '24dp',
         fontWeight: 'bold'
     }
+},
+".search":{ 
+	backgroundColor: "#fff",
+	borderWidth:0,
+	borderColor:"#fff",
+	tintColor: "#C41230",
+	hintText: "Search",
+	barColor: "#fff",
+	showBookmark:true
 }

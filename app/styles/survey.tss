@@ -7,12 +7,6 @@
         shadow:{color:'gray', offset:{width:1,height:1}}
     },
     backgroundColor: 'white'
-},
-'#index': {
-  backgroundColor: '#fff',
-  modal: false,
-  exitOnClose: true,
-  layout: 'vertical'
 }
 'Switch': {
 	top: '5dp',
@@ -20,14 +14,22 @@
 }
 '.titles': {
   value: false,
-  titleOn: "I'm on",
-  titleOff: "I'm off"
+  titleOn: "Yes",
+  titleOff: "No"
 }
 '.checkbox': {
   value: true,
   style: Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
-    titleOn: "I'm on",
-    titleOff: "I'm off"
+    titleOn: "Yes",
+    titleOff: "No"
+}
+"TextField": {
+  	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  	color: 'gray',
+	fontSize: '15dp',
+  	viewShadowColor: 'lightgray',
+  	viewShadowOffset:'2dp',
+  	top: 10, left: 10,
 }
 "Label": {
 	font: {
@@ -39,13 +41,13 @@
 	bottom: '2dp',
 	visibleItems: 3,
 	width: '100%',
-	selectionIndicator: true
-},
+	height: '90dp'
+}
 "Picker[platform=android]": {
 	useSpinner: true
-}
+},
 "TableView": {
-	separatorColor: 'transparent',
+	separatorColor: 'lightgray',
 	//backgroundImage: '/images/save.png',
 	//allowsSelection: 'true',
 	backgroundRepeat: 'false'
@@ -64,13 +66,13 @@
 	borderRadius: '10',
 //	borderWidth: '2',
 //	backgroundColor: '#A7B073',
-	backgroundColor: 'transparent',
-	shadowColor: 'lightgray',
-	shadowOffset: {
-		x: 2,
-		y: 2
-	},
-	color: 'gray',
+	backgroundColor: '#0099CC',
+//	shadowColor: 'lightgray',
+//	shadowOffset: {
+//		x: 2,
+//		y: 2
+//	},
+	color: 'white',
 	font: {
 		fontFamily: 'Verdana',
 		fontSize: '25dp',

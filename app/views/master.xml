@@ -1,10 +1,13 @@
 <Alloy>
 	<Window id="genericWin" title="Available Pets">
-		<TableView id="pettable" onClick="openDetail" filterAttribute="id">
-			<SearchBar platform="android,ios"/>
+		<!--
+		<SearchBar id="searchBar" platform="ios" class="search" onFocus="onSearchFocus" onCancel="onSearchCancel"  onChange="onSearchChange" />
+		-->
+		<TableView id="pettable" onClick="openDetail" filterAnchored="true" filterAttribute="breed">
 			<HeaderView platform="android">
 				<Label id="header">Dogs for Adoption</Label>
 			</HeaderView>
+			<SearchBar platform="android,ios" hintText="Breed"/>
 		</TableView>
 	</Window>
 </Alloy>

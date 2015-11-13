@@ -3,10 +3,12 @@
 
 var args = arguments[0] || {};
 
-// Note 'dogFullName' is not an element on the xml view but it gets created on the fly by the following statement
+// Note 'petID', 'petFullName' & 'petType' are not an element on the xml view but it gets created on the fly by the following statements
 $.row.petID = args.pet_id_from_master;
 $.row.petFullName = args.pet_name_from_master;
 $.row.petType = args.pet_type;
+
+$.row.breed = args.pet_breed_from_master;
 
 $.pet_name.text = args.pet_name_from_master;
 $.pet_breed.text = args.pet_breed_from_master;

@@ -10,11 +10,7 @@ function closeKeyboard(e) {
     e.source.blur();
 }
 
-/*function updateLabel(e){
-//    $.label.text = String.format("%3.1f", e.value);
-    $.label_slider.text = String.format("%d", e.value);
-}
-*/
+
 function changepickerDog(e){
 	if(e.value === true){
 		$.dogbreedrow.visible = 'true';
